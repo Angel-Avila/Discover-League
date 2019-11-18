@@ -1,0 +1,24 @@
+PODS:
+  - IQKeyboardManager (6.5.4)
+  - LeagueAPI (2.3.0)
+  - PinLayout (1.8.13)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - LeagueAPI
+  - PinLayout
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManager
+    - LeagueAPI
+    - PinLayout
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
+  LeagueAPI: 91332703f1c8c18b7c9f33c8b5d12d48fad3ac39
+  PinLayout: e41a50260a76508b7a7fcee8955c76639adc69bc
+
+PODFILE CHECKSUM: a35ef8bd89b7b1280fec6c17ba52bd0a7b44298f
+
+COCOAPODS: 1.8.4
