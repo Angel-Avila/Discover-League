@@ -69,16 +69,20 @@ class LandingView: DLView {
         return view
     }()
     
-    lazy private var form = LandingFormView()
+    lazy private var formView = LandingFormView()
     
     override init() {
         super.init()
-        addSubviews([backgroundImage, backgroundCover, logoView, logoImage, innerCircleView, outerCircleView, form])
-        form.alpha = 0
+        addSubviews([backgroundImage, backgroundCover, logoView, logoImage, innerCircleView, outerCircleView, formView])
+        formView.alpha = 0
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("Not supported")
+    }
+    
+    func addEnterButtonTarget(target: Any?, action: Selector, for controlEvent: UIControl.Event) {
+        formView.addEnterButtonTarget(target: target, action: action, for: controlEvent)
     }
     
     override func setupUI() {
@@ -88,11 +92,11 @@ class LandingView: DLView {
 
         [logoView, logoImage, innerCircleView, outerCircleView].forEach { $0.pin.center() }
         
-        form.pin
+        formView.pin
             .hCenter()
             .top(logoTargetY + logoSize + 30)
             .width(UIScreen.main.bounds.width - 60)
-            .height(280)
+            .height(200)
         
     }
     
@@ -123,9 +127,8 @@ class LandingView: DLView {
     }
     
     private func animateFormAppearing() {
-        
         UIView.animate(withDuration: 0.3, delay: 0.3, options: .curveLinear, animations: {
-            self.form.alpha = 1
+            self.formView.alpha = 1
         })
     }
 }

@@ -12,43 +12,30 @@ import PinLayout
 
 class LandingFormView: UIView {
     
-    lazy private var floatingContainer: UIView = {
-        let view = UIView()
-        view.backgroundColor = .secondarySystemBackground
-        view.float()
-        view.layer.cornerRadius = 15
-        view.alpha = 0
-        return view
-    }()
+    lazy private var descriptionLabel = UILabel(font: .regular, text: "Select a language", fontSize: 15, textColor: .secondaryLabel, textAlignment: .left)
     
     private let textFieldHeight: CGFloat = 32
     
-    lazy private var usernameTextField: UITextField = {
+    lazy private var languageTextField: UITextField = {
         let textField = TextField()
-        textField.autocapitalizationType = .none
-        textField.autocorrectionType = .no
-        textField.placeholder = "username".localize()
-        textField.backgroundColor = .tertiarySystemBackground
-        textField.layer.cornerRadius = textFieldHeight / 2
-        return textField
-    }()
-    
-    lazy private var serverTextField: UITextField = {
-        let textField = TextField()
-        textField.placeholder = "server".localize()
+        textField.placeholder = "Language"
         textField.autocorrectionType = .no
         textField.backgroundColor = .tertiarySystemBackground
         textField.layer.cornerRadius = textFieldHeight / 2
-        textField.inputView = serverPicker
+        textField.inputView = languagePicker
         return textField
     }()
     
-    private let serverPicker = UIPickerView()
-    private let pickerDataSource = ServerPickerDataSource()
+    private let languagePicker = UIPickerView()
+    private let pickerDataSource = LanguagePickerDataSource()
     
     lazy private var enterButton = UIButton.colorButton(color: .systemOrange, height: 50, font: .bold, textColor: .white, localizableTitle: "enter", buttonType: .rounded, shadowType: .defaultShadow)
     
-    lazy private var skipButton = UIButton.colorButton(color: .clear, height: 20, font: .regular, textColor: .tertiaryLabel, localizableTitle: "skip", buttonType: .rectangular, shadowType: .none)
+    var languageCode: String? {
+        get {
+            pickerDataSource.languageCode(forLanguage: languageTextField.text ?? "")
+        }
+    }
     
     init() {
         super.init(frame: .zero)
@@ -58,10 +45,10 @@ class LandingFormView: UIView {
         layer.cornerRadius = 15
         
         pickerDataSource.delegate = self
-        serverTextField.delegate = self
+        languageTextField.delegate = self
         
-        serverPicker.dataSource = pickerDataSource
-        serverPicker.delegate = pickerDataSource
+        languagePicker.dataSource = pickerDataSource
+        languagePicker.delegate = pickerDataSource
         
         addSubviews()
     }
@@ -70,54 +57,59 @@ class LandingFormView: UIView {
         fatalError("not supp")
     }
     
+    func addEnterButtonTarget(target: Any?, action: Selector, for controlEvent: UIControl.Event) {
+        enterButton.addTarget(target, action: action, for: controlEvent)
+    }
+    
     private func addSubviews() {
-        addSubview(usernameTextField)
-        addSubview(serverTextField)
+        addSubview(descriptionLabel)
+        addSubview(languageTextField)
         addSubview(enterButton)
-        addSubview(skipButton)
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        let vMargin: CGFloat = 30
+        descriptionLabel.pin
+            .horizontally(28)
+            .top(30)
+            .sizeToFit(.width)
         
-        usernameTextField.pin
+        languageTextField.pin
             .horizontally(20)
-            .top(40)
+            .below(of: descriptionLabel)
             .height(textFieldHeight)
-        
-        serverTextField.pin
-            .horizontally(20)
-            .below(of: usernameTextField)
-            .marginTop(vMargin)
-            .height(textFieldHeight)
+            .marginTop(10)
         
         enterButton.pin
-            .below(of: serverTextField)
+            .below(of: languageTextField)
             .hCenter()
             .size(.init(width: 140, height: 50))
-            .marginTop(vMargin)
+            .marginTop(30)
         
-        skipButton.pin
-            .below(of: enterButton)
-            .hCenter()
-            .size(.init(width: 40, height: 20))
-            .marginTop(vMargin/2)
+        if languageTextField.text == "" {
+            enterButton.disable()
+        }
     }
 }
 
 extension LandingFormView: UIPickerListening {
     func pickerView(_ pickerView: UIPickerView, didSelectObject object: Any) {
         guard let name = object as? String else { return }
-        serverTextField.text = name
+        languageTextField.text = name
     }
 }
 
 extension LandingFormView: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        if textField === self.serverTextField && textField.text == "" {
-            pickerDataSource.pickerView(serverPicker, didSelectRow: 0, inComponent: 0)
+        if textField.text == "" {
+            pickerDataSource.pickerView(languagePicker, didSelectRow: 0, inComponent: 0)
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.text != "" {
+            enterButton.enable()
         }
     }
 }
@@ -126,9 +118,9 @@ protocol UIPickerListening: class {
     func pickerView(_ pickerView: UIPickerView, didSelectObject object: Any)
 }
 
-class ServerPickerDataSource: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
+class LanguagePickerDataSource: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    private let servers = ["NA", "LAN", "EUNE", "EUW", "LAS", "JP", "KR", "OCE", "TR", "BR"]
+    private let languages: [String: String] = ["English": "en_US", "Español": "es_MX", "Deutsch": "de_DE"]
     
     weak var delegate: UIPickerListening?
     
@@ -137,15 +129,19 @@ class ServerPickerDataSource: NSObject, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        servers.count
+        languages.count
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        servers[row]
+        languages.keys.sorted()[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        delegate?.pickerView(pickerView, didSelectObject: servers[row])
+        delegate?.pickerView(pickerView, didSelectObject: languages.keys.sorted()[row])
+    }
+    
+    func languageCode(forLanguage language: String) -> String? {
+        languages[language]
     }
 }
 
@@ -158,7 +154,7 @@ fileprivate class LandingFormViewController: UIViewController {
         view.addSubview(v)
         v.pin.vCenter()
             .horizontally(20)
-            .height(280)
+            .height(200)
         view.backgroundColor = .systemBackground
     }
 }

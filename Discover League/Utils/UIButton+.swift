@@ -90,4 +90,20 @@ extension UIButton {
         
         return button
     }
+    
+    func disable(animated: Bool = true) {
+        let duration: TimeInterval = animated ? 0.3 : 0
+        UIView.animate(withDuration: duration) {
+            self.isEnabled = false
+            self.alpha = 0.3
+        }
+    }
+    
+    func enable(animated: Bool = true) {
+        let duration: TimeInterval = animated ? 0.3 : 0
+        UIView.animate(withDuration: duration) {
+            self.isEnabled = true
+            self.alpha = 1.0
+        }
+    }
 }

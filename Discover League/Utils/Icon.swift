@@ -17,7 +17,7 @@ extension Icon {
     var image: UIImage? {
         switch self {
         case . smallLogo:
-            return UIImage(named: "logo-small")
+            return UIImage(named: "logo-black")
         }
     }
 }

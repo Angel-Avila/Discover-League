@@ -18,6 +18,12 @@
 		0B54AE842380CE87009A5561 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B54AE7D2380CE87009A5561 /* UILabel+.swift */; };
 		0B54AE852380CE87009A5561 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B54AE7E2380CE87009A5561 /* UIColor+.swift */; };
 		0BB2679E238259F100C89763 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2679D238259F100C89763 /* UIButton+.swift */; };
+		0BD071E3238323C000C3DA0B /* DLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD071E2238323C000C3DA0B /* DLClient.swift */; };
+		0BD071E623832DCE00C3DA0B /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD071E523832DCE00C3DA0B /* Navigator.swift */; };
+		0BD071E823832DF000C3DA0B /* ComponentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD071E723832DF000C3DA0B /* ComponentProvider.swift */; };
+		0BD071EA23832F2A00C3DA0B /* Authorization.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BD071E923832F2A00C3DA0B /* Authorization.plist */; };
+		0BD071ED2383305300C3DA0B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD071EC2383305300C3DA0B /* Settings.swift */; };
+		0BD071F02383BB1E00C3DA0B /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD071EF2383BB1E00C3DA0B /* Champion.swift */; };
 		0BE07C4A238110E800B39433 /* LandingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE07C49238110E800B39433 /* LandingFormView.swift */; };
 		0BE07C4C2381136C00B39433 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE07C4B2381136C00B39433 /* String+.swift */; };
 		0BE07C4F2381140F00B39433 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BE07C512381140F00B39433 /* Localizable.strings */; };
@@ -42,6 +48,12 @@
 		0B54AE7D2380CE87009A5561 /* UILabel+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		0B54AE7E2380CE87009A5561 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		0BB2679D238259F100C89763 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		0BD071E2238323C000C3DA0B /* DLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLClient.swift; sourceTree = "<group>"; };
+		0BD071E523832DCE00C3DA0B /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		0BD071E723832DF000C3DA0B /* ComponentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentProvider.swift; sourceTree = "<group>"; };
+		0BD071E923832F2A00C3DA0B /* Authorization.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Authorization.plist; sourceTree = "<group>"; };
+		0BD071EC2383305300C3DA0B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		0BD071EF2383BB1E00C3DA0B /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
 		0BE07C49238110E800B39433 /* LandingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingFormView.swift; sourceTree = "<group>"; };
 		0BE07C4B2381136C00B39433 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		0BE07C502381140F00B39433 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -108,6 +120,39 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		0BD071E1238323AE00C3DA0B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0BD071E2238323C000C3DA0B /* DLClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0BD071E423832DC500C3DA0B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0BD071E523832DCE00C3DA0B /* Navigator.swift */,
+				0BD071E723832DF000C3DA0B /* ComponentProvider.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0BD071EB2383304B00C3DA0B /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				0BD071EC2383305300C3DA0B /* Settings.swift */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+		0BD071EE2383B93D00C3DA0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BD071EF2383BB1E00C3DA0B /* Champion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0BF0EEB3237DEA4E002861BC = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +175,16 @@
 			isa = PBXGroup;
 			children = (
 				0BF0EEBF237DEA4E002861BC /* AppDelegate.swift */,
+				0BD071EE2383B93D00C3DA0B /* Model */,
+				0BD071EB2383304B00C3DA0B /* UserSettings */,
+				0BD071E423832DC500C3DA0B /* Navigation */,
+				0BD071E1238323AE00C3DA0B /* Network */,
 				0B3B51CD2380CC10004B01C4 /* Presentation */,
 				0BF0EEC1237DEA4E002861BC /* SceneDelegate.swift */,
 				0BF0EEC5237DEA4F002861BC /* Assets.xcassets */,
 				0BF0EECA237DEA4F002861BC /* LaunchScreen.storyboard */,
 				0BF0EECD237DEA4F002861BC /* Info.plist */,
+				0BD071E923832F2A00C3DA0B /* Authorization.plist */,
 				0BE07C512381140F00B39433 /* Localizable.strings */,
 				0B54AE772380CE87009A5561 /* Utils */,
 				0BF0EEC7237DEA4F002861BC /* Preview Content */,
@@ -232,6 +282,7 @@
 				0BE07C4F2381140F00B39433 /* Localizable.strings in Resources */,
 				0BF0EEC9237DEA4F002861BC /* Preview Assets.xcassets in Resources */,
 				0BF0EEC6237DEA4F002861BC /* Assets.xcassets in Resources */,
+				0BD071EA23832F2A00C3DA0B /* Authorization.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +337,8 @@
 			files = (
 				0B54AE822380CE87009A5561 /* UIImageView+.swift in Sources */,
 				0B3B51D12380CC3D004B01C4 /* ControllerView.swift in Sources */,
+				0BD071F02383BB1E00C3DA0B /* Champion.swift in Sources */,
+				0BD071E3238323C000C3DA0B /* DLClient.swift in Sources */,
 				0B3B51CF2380CC26004B01C4 /* LandingView.swift in Sources */,
 				0B54AE802380CE87009A5561 /* UIFont+.swift in Sources */,
 				0B54AE842380CE87009A5561 /* UILabel+.swift in Sources */,
@@ -294,12 +347,15 @@
 				0B54AE7F2380CE87009A5561 /* Icon.swift in Sources */,
 				0BF0EEC2237DEA4E002861BC /* SceneDelegate.swift in Sources */,
 				0BF0EED4237DF6BD002861BC /* LandingViewController.swift in Sources */,
+				0BD071E623832DCE00C3DA0B /* Navigator.swift in Sources */,
 				0B54AE812380CE87009A5561 /* UIView+.swift in Sources */,
 				0B3B51D32380CC43004B01C4 /* ViewController.swift in Sources */,
+				0BD071ED2383305300C3DA0B /* Settings.swift in Sources */,
 				0BB2679E238259F100C89763 /* UIButton+.swift in Sources */,
 				0BE07C4A238110E800B39433 /* LandingFormView.swift in Sources */,
 				0BE07C4C2381136C00B39433 /* String+.swift in Sources */,
 				0B54AE852380CE87009A5561 /* UIColor+.swift in Sources */,
+				0BD071E823832DF000C3DA0B /* ComponentProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

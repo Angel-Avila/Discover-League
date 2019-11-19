@@ -12,9 +12,11 @@ import SwiftUI
 
 class LandingViewController: ViewController<LandingView> {
 
-    private var imageView = UIImageView(image: UIImage(named: "splash2"))
+    private let settings: Settings
     
-    init() {
+    init(settings: Settings) {
+        self.settings = settings
+        
         super.init()
         controllerView = LandingView()
     }
@@ -26,14 +28,11 @@ class LandingViewController: ViewController<LandingView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         controllerView.animateAppearance()
+        controllerView.addEnterButtonTarget(target: self, action: #selector(enterButtonPressed), for: .touchUpInside)
     }
     
-    @objc private func setImage(_ image: UIImage) {
-        imageView.image = image
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    @objc private func enterButtonPressed() {
+
     }
 }
 
@@ -45,7 +44,7 @@ struct LandingPreview: PreviewProvider {
     
     struct PreviewView: UIViewControllerRepresentable {
         func makeUIViewController(context: UIViewControllerRepresentableContext<LandingPreview.PreviewView>) -> UIViewController {
-            return LandingViewController()
+            return LandingViewController(settings: Settings())
         }
         
         func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<LandingPreview.PreviewView>) {
