@@ -32,7 +32,9 @@ class LandingViewController: ViewController<LandingView> {
     }
     
     @objc private func enterButtonPressed() {
-
+        guard let code = controllerView.languageCode else { return }
+        settings.preferredLanguage = code
+        getNavigator()?.navigate(.setRoot(view: .home), self)
     }
 }
 

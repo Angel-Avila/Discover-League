@@ -120,7 +120,7 @@ protocol UIPickerListening: class {
 
 class LanguagePickerDataSource: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    private let languages: [String: String] = ["English": "en_US", "Español": "es_MX", "Deutsch": "de_DE"]
+    private let languages: [String: String] = ["English": "en", "Español": "es-419", "Deutsch": "de"]
     
     weak var delegate: UIPickerListening?
     

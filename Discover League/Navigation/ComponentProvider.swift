@@ -40,6 +40,9 @@ class DefaultComponentProvider: ComponentProvider {
         case .landing:
             return LandingViewController(settings: settings)
             
+        case .home:
+            return HomeViewController(preferredLanguage: settings.preferredLanguage ?? "en")
+            
         default:
             return UIViewController(nibName: nil, bundle: nil)
         }

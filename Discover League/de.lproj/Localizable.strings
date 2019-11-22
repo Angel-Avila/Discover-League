@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Discover League
+
+  Created by Angel Avila on 16/11/19.
+  Copyright © 2019 Angel Avila. All rights reserved.
+*/
+
+// MARK: - Landing
+"username" = "Username";
+"server" = "Server";
+"enter" = "Enter";
+"skip" = "Skip";

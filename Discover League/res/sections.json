@@ -1,0 +1,342 @@
+[
+    {
+        "id": 0,
+        "type": "wideTable",
+        "title": "Featured Splash Arts",
+        "subtitle" : "",
+        "dataIdentifiers": [
+            {
+                "championId": "Aatrox",
+                "skinId": "7"
+            },
+            {
+                "championId": "Annie",
+                "skinId": "12"
+            },
+            {
+                "championId": "Ashe",
+                "skinId": "17"
+            },
+            {
+                "championId": "Caitlyn",
+                "skinId": "19"
+            },
+            {
+                "championId": "Chogath",
+                "skinId": "7"
+            },
+            {
+                "championId": "Darius",
+                "skinId": "15"
+            },
+            {
+                "championId": "Evelynn",
+                "skinId": "7"
+            },
+            {
+                "championId": "Fizz",
+                "skinId": "15"
+            },
+            {
+                "championId": "Garen",
+                "skinId": "13"
+            },
+            {
+                "championId": "Hecarim",
+                "skinId": "8"
+            },
+            {
+                "championId": "JarvanIV",
+                "skinId": "7"
+            },
+            {
+                "championId": "Jhin",
+                "skinId": "5"
+            },
+            {
+                "championId": "Jinx",
+                "skinId": "13"
+            },
+            {
+                "championId": "Kaisa",
+                "skinId": "14"
+            },
+            {
+                "championId": "Karma",
+                "skinId": "8"
+            },
+            {
+                "championId": "Kayn",
+                "skinId": "2"
+            },
+            {
+                "championId": "MissFortune",
+                "skinId": "1"
+            },
+            {
+                "championId": "MonkeyKing",
+                "skinId": "6"
+            },
+            {
+                "championId": "Nidalee",
+                "skinId": "1"
+            },
+            {
+                "championId": "Nunu",
+                "skinId": "8"
+            },
+            {
+                "championId": "Orianna",
+                "skinId": "7"
+            },
+            {
+                "championId": "Pantheon",
+                "skinId": "6"
+            },
+            {
+                "championId": "Qiyana",
+                "skinId": "10"
+            },
+            {
+                "championId": "Renekton",
+                "skinId": "17"
+            },
+            {
+                "championId": "Riven",
+                "skinId": "16"
+            },
+            {
+                "championId": "Ryze",
+                "skinId": "11"
+            },
+            {
+                "championId": "Senna",
+                "skinId": "1"
+            },
+            {
+                "championId": "Shaco",
+                "skinId": "8"
+            },
+            {
+                "championId": "Shen",
+                "skinId": "15"
+            },
+            {
+                "championId": "Sivir",
+                "skinId": "10"
+            },
+            {
+                "championId": "Teemo",
+                "skinId": "18"
+            },
+            {
+                "championId": "Thresh",
+                "skinId": "6"
+            },
+            {
+                "championId": "Twitch",
+                "skinId": "12"
+            },
+            {
+                "championId": "Vayne",
+                "skinId": "13"
+            },
+            {
+                "championId": "XinZhao",
+                "skinId": "20"
+            },
+            {
+                "championId": "Yasuo",
+                "skinId": "18"
+            },
+            {
+                "championId": "Zyra",
+                "skinId": "4"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "type": "tallTable",
+        "title": "Mage champions to Try Out",
+        "subtitle" : "",
+        "dataIdentifiers": [
+            {
+                "championId": "AurelionSol",
+                "skinId": "0"
+            },
+            {
+                "championId": "Velkoz",
+                "skinId": "0"
+            },
+            {
+                "championId": "Vladimir",
+                "skinId": "0"
+            },
+            {
+                "championId": "Brand",
+                "skinId": "0"
+            },
+            {
+                "championId": "Ahri",
+                "skinId": "0"
+            },
+            {
+                "championId": "Leblanc",
+                "skinId": "0"
+            },
+            {
+                "championId": "Swain",
+                "skinId": "0"
+            },
+            {
+                "championId": "Karma",
+                "skinId": "0"
+            },
+            {
+                "championId": "Lux",
+                "skinId": "0"
+            },
+            {
+                "championId": "Nami",
+                "skinId": "0"
+            },
+            {
+                "championId": "Diana",
+                "skinId": "0"
+            },
+            {
+                "championId": "Kassadin",
+                "skinId": "0"
+            },
+            {
+                "championId": "Annie",
+                "skinId": "0"
+            },
+            {
+                "championId": "Syndra",
+                "skinId": "0"
+            },
+            {
+                "championId": "Anivia",
+                "skinId": "0"
+            },
+            {
+                "championId": "Neeko",
+                "skinId": "0"
+            },
+            {
+                "championId": "Elise",
+                "skinId": "0"
+            },
+            {
+                "championId": "Sylas",
+                "skinId": "0"
+            },
+            {
+                "championId": "Karthus",
+                "skinId": "0"
+            },
+            {
+                "championId": "Heimerdinger",
+                "skinId": "0"
+            },
+            {
+                "championId": "TwistedFate",
+                "skinId": "0"
+            },
+            {
+                "championId": "Kennen",
+                "skinId": "0"
+            },
+            {
+                "championId": "Rumble",
+                "skinId": "0"
+            },
+            {
+                "championId": "Veigar",
+                "skinId": "0"
+            },
+            {
+                "championId": "Xerath",
+                "skinId": "0"
+            },
+            {
+                "championId": "Ryze",
+                "skinId": "0"
+            },
+            {
+                "championId": "Viktor",
+                "skinId": "0"
+            },
+            {
+                "championId": "Azir",
+                "skinId": "0"
+            },
+            {
+                "championId": "Zoe",
+                "skinId": "0"
+            },
+            {
+                "championId": "Taliyah",
+                "skinId": "0"
+            },
+            {
+                "championId": "Malzahar",
+                "skinId": "0"
+            },
+            {
+                "championId": "Gragas",
+                "skinId": "0"
+            },
+            {
+                "championId": "Lissandra",
+                "skinId": "0"
+            },
+            {
+                "championId": "Morgana",
+                "skinId": "0"
+            },
+            {
+                "championId": "Evelynn",
+                "skinId": "0"
+            },
+            {
+                "championId": "Ziggs",
+                "skinId": "0"
+            },
+            {
+                "championId": "Nidalee",
+                "skinId": "0"
+            },
+            {
+                "championId": "Zilean",
+                "skinId": "0"
+            },
+            {
+                "championId": "Katarina",
+                "skinId": "0"
+            },
+            {
+                "championId": "Zyra",
+                "skinId": "0"
+            },
+            {
+                "championId": "Fiddlesticks",
+                "skinId": "0"
+            },
+            {
+                "championId": "Orianna",
+                "skinId": "0"
+            },
+            {
+                "championId": "Galio",
+                "skinId": "0"
+            },
+            {
+                "championId": "Cassiopeia",
+                "skinId": "0"
+            }
+        ]
+    }
+]

@@ -71,6 +71,12 @@ class LandingView: DLView {
     
     lazy private var formView = LandingFormView()
     
+    var languageCode: String? {
+        get {
+            formView.languageCode
+        }
+    }
+    
     override init() {
         super.init()
         addSubviews([backgroundImage, backgroundCover, logoView, logoImage, innerCircleView, outerCircleView, formView])
