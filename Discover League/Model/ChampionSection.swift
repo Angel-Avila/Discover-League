@@ -12,6 +12,7 @@ struct ChampionSection: Decodable, Hashable {
     let id: Int
     let type: String
     let title: String
+    let showsButton: Bool
     let subtitle: String
     let dataIdentifiers: [DataIdentifier]
 }

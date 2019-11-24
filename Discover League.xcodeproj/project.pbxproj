@@ -23,6 +23,9 @@
 		0B54AE852380CE87009A5561 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B54AE7E2380CE87009A5561 /* UIColor+.swift */; };
 		0B63E47B238662700046F2AB /* ChampionSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B63E47A238662700046F2AB /* ChampionSection.swift */; };
 		0B7E492A238775D400E0B4E9 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E4929238775D400E0B4E9 /* SectionHeader.swift */; };
+		0B7E4D55238B0FEE00F54F86 /* SelfConfiguringSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E4D54238B0FEE00F54F86 /* SelfConfiguringSection.swift */; };
+		0B7E4D57238B101800F54F86 /* SectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E4D56238B101800F54F86 /* SectionFooter.swift */; };
+		0B7E4D59238B102E00F54F86 /* SmallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E4D58238B102E00F54F86 /* SmallCell.swift */; };
 		0B91482D238710350003F2C1 /* sections.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B91482C238710350003F2C1 /* sections.json */; };
 		0BB2679E238259F100C89763 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2679D238259F100C89763 /* UIButton+.swift */; };
 		0BD071E3238323C000C3DA0B /* DLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD071E2238323C000C3DA0B /* DLClient.swift */; };
@@ -207,6 +210,9 @@
 		0B54AE7E2380CE87009A5561 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		0B63E47A238662700046F2AB /* ChampionSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionSection.swift; sourceTree = "<group>"; };
 		0B7E4929238775D400E0B4E9 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		0B7E4D54238B0FEE00F54F86 /* SelfConfiguringSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringSection.swift; sourceTree = "<group>"; };
+		0B7E4D56238B101800F54F86 /* SectionFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionFooter.swift; sourceTree = "<group>"; };
+		0B7E4D58238B102E00F54F86 /* SmallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCell.swift; sourceTree = "<group>"; };
 		0B91482C238710350003F2C1 /* sections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sections.json; sourceTree = "<group>"; };
 		0BB2679D238259F100C89763 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		0BD071E2238323C000C3DA0B /* DLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLClient.swift; sourceTree = "<group>"; };
@@ -689,10 +695,13 @@
 			isa = PBXGroup;
 			children = (
 				0B36B72323875FFB003E3EC2 /* SelfConfiguringCell.swift */,
+				0B7E4D54238B0FEE00F54F86 /* SelfConfiguringSection.swift */,
 				0B36B7252387600E003E3EC2 /* FeaturedCell.swift */,
 				0B36B727238762E5003E3EC2 /* TallCell.swift */,
 				0B039C0C2389B63000B38336 /* MediumCell.swift */,
+				0B7E4D58238B102E00F54F86 /* SmallCell.swift */,
 				0B7E4929238775D400E0B4E9 /* SectionHeader.swift */,
+				0B7E4D56238B101800F54F86 /* SectionFooter.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1282,6 +1291,7 @@
 				0B54AE842380CE87009A5561 /* UILabel+.swift in Sources */,
 				0BD077C923847F8F00C3DA0B /* HomeViewController.swift in Sources */,
 				0BF0EEC0237DEA4E002861BC /* AppDelegate.swift in Sources */,
+				0B7E4D55238B0FEE00F54F86 /* SelfConfiguringSection.swift in Sources */,
 				0B54AE832380CE87009A5561 /* TextField.swift in Sources */,
 				0B54AE7F2380CE87009A5561 /* Icon.swift in Sources */,
 				0BF0EEC2237DEA4E002861BC /* SceneDelegate.swift in Sources */,
@@ -1293,8 +1303,10 @@
 				0B36B728238762E5003E3EC2 /* TallCell.swift in Sources */,
 				0B36B72423875FFB003E3EC2 /* SelfConfiguringCell.swift in Sources */,
 				0BD071ED2383305300C3DA0B /* Settings.swift in Sources */,
+				0B7E4D57238B101800F54F86 /* SectionFooter.swift in Sources */,
 				0BB2679E238259F100C89763 /* UIButton+.swift in Sources */,
 				0BE07C4A238110E800B39433 /* LandingFormView.swift in Sources */,
+				0B7E4D59238B102E00F54F86 /* SmallCell.swift in Sources */,
 				0BE07C4C2381136C00B39433 /* String+.swift in Sources */,
 				0B54AE852380CE87009A5561 /* UIColor+.swift in Sources */,
 				0BD071E823832DF000C3DA0B /* ComponentProvider.swift in Sources */,

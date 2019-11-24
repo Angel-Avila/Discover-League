@@ -15,6 +15,7 @@ final class HomeViewController: UIViewController {
     
     private var championHash = [String: Champion]()
     private var skinHash = [String: Skin]()
+    private var roleHash = [String: [Champion]]()
     
     private var collectionView: UICollectionView!
     private var dataSource: UICollectionViewDiffableDataSource<ChampionSection, DataIdentifier>?
@@ -53,16 +54,22 @@ final class HomeViewController: UIViewController {
         view.addSubview(collectionView)
         
         collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.reuseIdentifier)
+        collectionView.register(SectionFooter.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: SectionFooter.reuseIdentifier)
         
         collectionView.register(FeaturedCell.self, forCellWithReuseIdentifier: FeaturedCell.reuseIdentifier)
         collectionView.register(TallCell.self, forCellWithReuseIdentifier: TallCell.reuseIdentifier)
         collectionView.register(MediumCell.self, forCellWithReuseIdentifier: MediumCell.reuseIdentifier)
+        collectionView.register(SmallCell.self, forCellWithReuseIdentifier: SmallCell.reuseIdentifier)
     }
     
     private func hashData() {
+        let roles = ["Marksman", "Assassin", "Mage", "Support", "Tank", "Fighter"]
+        roles.forEach { roleHash[$0] = [Champion]() }
+        
         champions.forEach { champion in
             championHash[champion.id] = champion
             champion.skins.forEach { skinHash[$0.id] = $0 }
+            champion.roles.forEach { roleHash[$0]?.append(champion) }
         }
     }
 }
@@ -75,9 +82,10 @@ extension HomeViewController {
         dataSource = UICollectionViewDiffableDataSource<ChampionSection, DataIdentifier>(collectionView: collectionView, cellProvider: { collectionView, indexPath, identifier -> UICollectionViewCell? in
             
             switch self.sections[indexPath.section].type {
+            case "smallTable":
+                return self.configure(SmallCell.self, with: identifier, for: indexPath)
             case "mediumTable":
                 return self.configure(MediumCell.self, with: identifier, for: indexPath)
-            
             case "tallTable":
                 return self.configure(TallCell.self, with: identifier, for: indexPath)
             default:
@@ -87,7 +95,15 @@ extension HomeViewController {
         
         dataSource?.supplementaryViewProvider = { [weak self] collectionView, kind, indexPath in
             
-            guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.reuseIdentifier, for: indexPath) as? SectionHeader else { return nil }
+            let identifier: String!
+            
+            if kind == UICollectionView.elementKindSectionHeader {
+                identifier = SectionHeader.reuseIdentifier
+            } else {
+                identifier = SectionFooter.reuseIdentifier
+            }
+            
+            guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: identifier, for: indexPath) as? SelfConfiguringSection else { return nil }
             
             guard let firstDataIdentifier = self?.dataSource?.itemIdentifier(for: indexPath) else { return nil }
             
@@ -95,10 +111,9 @@ extension HomeViewController {
             
             if section.title.isEmpty { return nil }
             
-            sectionHeader.title.text = section.title
-            sectionHeader.subtitle.text = section.subtitle
+            sectionHeader.configure(with: section)
             
-            return sectionHeader
+            return sectionHeader as? UICollectionReusableView
         }
     }
     
@@ -123,6 +138,15 @@ extension HomeViewController {
         
         cell.configure(with: champion)
         cell.configure(with: skin)
+                
+        if let smallCell = cell as? SmallCell {
+            if indexPath.row == 5 {
+                smallCell.hideSeparator()
+            } else {
+                smallCell.showSeparator()
+            }
+        }
+        
         return cell
     }
     
@@ -146,6 +170,8 @@ extension HomeViewController {
             let section = self.sections[sectionIndex]
             
             switch section.type {
+            case "smallTable":
+                return self.createSmallTableSection(using: section)
             case "mediumTable":
                 return self.createMediumTableSection(using: section)
             case "tallTable":
@@ -212,11 +238,33 @@ extension HomeViewController {
         return layoutSection
     }
     
+    func createSmallTableSection(using section: ChampionSection) -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.1667))
+        
+        let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
+        layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0)
+        
+        let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .estimated(264))
+        let layoutGroup = NSCollectionLayoutGroup.vertical(layoutSize: layoutGroupSize, subitems: [layoutItem])
+        
+        let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
+        
+        layoutSection.boundarySupplementaryItems = [createSectionHeader(), createSectionFooter()]
+        
+        return layoutSection
+    }
+    
     private func createSectionHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
         let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .estimated(90))
         let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: layoutSectionHeaderSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
         return layoutSectionHeader
     }
+    
+    private func createSectionFooter() -> NSCollectionLayoutBoundarySupplementaryItem {
+           let layoutSectionFooterSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .estimated(250))
+           let layoutSectionFooter = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: layoutSectionFooterSize, elementKind: UICollectionView.elementKindSectionFooter, alignment: .bottom)
+           return layoutSectionFooter
+       }
 }
 
 // MARK: - SwiftUI Preview

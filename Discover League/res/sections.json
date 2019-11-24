@@ -4,6 +4,7 @@
         "type": "wideTable",
         "title": "Featured Splash Arts",
         "subtitle" : "",
+        "showsButton": true,
         "dataIdentifiers": [
             {
                 "championId": "Aatrox",
@@ -160,6 +161,7 @@
         "type": "tallTable",
         "title": "Mage Champions to try out",
         "subtitle" : "",
+        "showsButton": true,
         "dataIdentifiers": [
             {
                 "championId": "AurelionSol",
@@ -344,6 +346,7 @@
         "type": "mediumTable",
         "title": "Lore reading",
         "subtitle" : "",
+        "showsButton": true,
         "dataIdentifiers":
             [{"championId":"JarvanIV","skinId":"0"},
             {"championId":"AurelionSol","skinId":"0"},
@@ -432,5 +435,20 @@
             {"championId":"Veigar","skinId":"0"},
             {"championId":"Tryndamere","skinId":"0"},
             {"championId":"Ivern","skinId":"0"}]
+    },
+    {
+        "id": 3,
+        "type": "smallTable",
+        "title": "Champions by role",
+        "subtitle" : "",
+        "showsButton": false,
+        "dataIdentifiers":[
+            {"championId":"AurelionSol","skinId":"0"},
+            {"championId":"Kalista","skinId":"0"},
+            {"championId":"Shen","skinId":"0"},
+            {"championId":"Zed","skinId":"0"},
+            {"championId":"RekSai","skinId":"0"},
+            {"championId":"Rakan","skinId":"0"}
+        ]
     }
 ]

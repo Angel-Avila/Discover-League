@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SectionHeader: UICollectionReusableView {
+class SectionHeader: UICollectionReusableView, SelfConfiguringSection {
     static let reuseIdentifier = "SectionHeader"
     
     let title = UILabel()
@@ -54,6 +54,24 @@ class SectionHeader: UICollectionReusableView {
         ])
         
         outerStackView.setCustomSpacing(10, after: separator)
+    }
+    
+    func configure(with section: ChampionSection) {
+        title.text = section.title
+        subtitle.text = section.subtitle
+        if section.showsButton {
+            showButton()
+        } else {
+            hideButton()
+        }
+    }
+    
+    func showButton() {
+        button.alpha = 1
+    }
+    
+    func hideButton() {
+        button.alpha = 0
     }
     
     required init?(coder: NSCoder) {

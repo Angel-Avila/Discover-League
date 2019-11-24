@@ -10,7 +10,7 @@ import UIKit
 
 final class TallCell: UICollectionViewCell, SelfConfiguringCell {
     static var reuseIdentifier: String = "TallCell"
-    static let height: CGFloat = 320
+    static let height: CGFloat = 340
     
     let name = UILabel()
     let title = UILabel()
