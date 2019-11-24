@@ -52,7 +52,11 @@ final class HomeViewController: UIViewController {
         collectionView.backgroundColor = .systemBackground
         view.addSubview(collectionView)
         
+        collectionView.register(SectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: SectionHeader.reuseIdentifier)
+        
         collectionView.register(FeaturedCell.self, forCellWithReuseIdentifier: FeaturedCell.reuseIdentifier)
+        collectionView.register(TallCell.self, forCellWithReuseIdentifier: TallCell.reuseIdentifier)
+        collectionView.register(MediumCell.self, forCellWithReuseIdentifier: MediumCell.reuseIdentifier)
     }
     
     private func hashData() {
@@ -71,10 +75,31 @@ extension HomeViewController {
         dataSource = UICollectionViewDiffableDataSource<ChampionSection, DataIdentifier>(collectionView: collectionView, cellProvider: { collectionView, indexPath, identifier -> UICollectionViewCell? in
             
             switch self.sections[indexPath.section].type {
+            case "mediumTable":
+                return self.configure(MediumCell.self, with: identifier, for: indexPath)
+            
+            case "tallTable":
+                return self.configure(TallCell.self, with: identifier, for: indexPath)
             default:
                 return self.configure(FeaturedCell.self, with: identifier, for: indexPath)
             }
         })
+        
+        dataSource?.supplementaryViewProvider = { [weak self] collectionView, kind, indexPath in
+            
+            guard let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeader.reuseIdentifier, for: indexPath) as? SectionHeader else { return nil }
+            
+            guard let firstDataIdentifier = self?.dataSource?.itemIdentifier(for: indexPath) else { return nil }
+            
+            guard let section = self?.dataSource?.snapshot().sectionIdentifier(containingItem: firstDataIdentifier) else { return nil }
+            
+            if section.title.isEmpty { return nil }
+            
+            sectionHeader.title.text = section.title
+            sectionHeader.subtitle.text = section.subtitle
+            
+            return sectionHeader
+        }
     }
     
     private func reloadData() {
@@ -121,6 +146,10 @@ extension HomeViewController {
             let section = self.sections[sectionIndex]
             
             switch section.type {
+            case "mediumTable":
+                return self.createMediumTableSection(using: section)
+            case "tallTable":
+                return self.createTallSection(using: section)
             default:
                 return self.createFeaturedSection(using: section)
             }
@@ -147,6 +176,47 @@ extension HomeViewController {
         
         return layoutSection
     }
+    
+    private func createTallSection(using section: ChampionSection) -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+        
+        let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
+        layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 5, bottom: 0, trailing: 5)
+        
+        let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.48), heightDimension: .absolute(TallCell.height))
+        
+        let layoutGroup = NSCollectionLayoutGroup.horizontal(layoutSize: layoutGroupSize, subitems: [layoutItem])
+        
+        let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
+        layoutSection.orthogonalScrollingBehavior = .continuous
+        
+        layoutSection.boundarySupplementaryItems = [createSectionHeader()]
+        
+        return layoutSection
+    }
+    
+    func createMediumTableSection(using section: ChampionSection) -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.46))
+        
+        let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
+        layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 8, bottom: 10, trailing: 8)
+        
+        let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .fractionalWidth(0.55))
+        let layoutGroup = NSCollectionLayoutGroup.vertical(layoutSize: layoutGroupSize, subitems: [layoutItem])
+        
+        let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
+        layoutSection.orthogonalScrollingBehavior = .groupPagingCentered
+        
+        layoutSection.boundarySupplementaryItems = [createSectionHeader()]
+        
+        return layoutSection
+    }
+    
+    private func createSectionHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
+        let layoutSectionHeaderSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.93), heightDimension: .estimated(90))
+        let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: layoutSectionHeaderSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+        return layoutSectionHeader
+    }
 }
 
 // MARK: - SwiftUI Preview
@@ -163,7 +233,7 @@ struct HomePreview: PreviewProvider {
     
     struct PreviewView: UIViewControllerRepresentable {
         func makeUIViewController(context: UIViewControllerRepresentableContext<HomePreview.PreviewView>) -> HomeViewController {
-            HomeViewController(preferredLanguage: "es-419")
+            HomeViewController(preferredLanguage: "en")
         }
         
         func updateUIViewController(_ uiViewController: HomeViewController, context: UIViewControllerRepresentableContext<HomePreview.PreviewView>) {

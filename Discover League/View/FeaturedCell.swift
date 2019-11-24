@@ -35,6 +35,8 @@ final class FeaturedCell: UICollectionViewCell, SelfConfiguringCell {
         imageView.layer.cornerRadius = 5
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFill
+        imageView.layer.borderColor = UIColor.separator.cgColor
+        imageView.layer.borderWidth = 1
         
         let stackView = UIStackView(arrangedSubviews: [separator, tagline, name, subtitle, imageView])
         stackView.translatesAutoresizingMaskIntoConstraints = false
