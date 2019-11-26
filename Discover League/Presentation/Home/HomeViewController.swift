@@ -20,8 +20,8 @@ final class HomeViewController: UIViewController {
     private var collectionView: UICollectionView!
     private var dataSource: UICollectionViewDiffableDataSource<ChampionSection, DataIdentifier>?
     
-    init(preferredLanguage language: String) {
-        self.champions = Bundle.main.decodeChampions(localization: language)
+    init() {
+        self.champions = Bundle.main.decodeChampions(localization: "en")
         self.sections = Bundle.main.decode([ChampionSection].self, from: "sections.json")
         
         super.init(nibName: nil, bundle: nil)
@@ -281,7 +281,7 @@ struct HomePreview: PreviewProvider {
     
     struct PreviewView: UIViewControllerRepresentable {
         func makeUIViewController(context: UIViewControllerRepresentableContext<HomePreview.PreviewView>) -> HomeViewController {
-            HomeViewController(preferredLanguage: "en")
+            HomeViewController()
         }
         
         func updateUIViewController(_ uiViewController: HomeViewController, context: UIViewControllerRepresentableContext<HomePreview.PreviewView>) {

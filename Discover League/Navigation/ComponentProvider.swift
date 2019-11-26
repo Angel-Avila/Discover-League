@@ -24,8 +24,7 @@ enum NavigationView {
 
 class DefaultComponentProvider: ComponentProvider {
     
-    let client = DLClient()
-    let settings = Settings()
+    let db = UserDefaults.standard
     
     /// Returns a `UIViewController` depending on which `NavigationView` enum case you sent.
     ///
@@ -38,10 +37,10 @@ class DefaultComponentProvider: ComponentProvider {
             return getRoot()
             
         case .landing:
-            return LandingViewController(settings: settings)
+            return LandingViewController()
             
         case .home:
-            return HomeViewController(preferredLanguage: settings.preferredLanguage ?? "en")
+            return HomeViewController()
             
         default:
             return UIViewController(nibName: nil, bundle: nil)
@@ -49,7 +48,7 @@ class DefaultComponentProvider: ComponentProvider {
     }
     
     private func getRoot() -> UIViewController {
-        if let _ = settings.preferredLanguage {
+        if db.bool(forKey: DBKey.onboardingComplete.rawValue) {
             return resolve(.home)
         }
         return resolve(.landing)

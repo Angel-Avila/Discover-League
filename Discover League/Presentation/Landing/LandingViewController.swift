@@ -10,13 +10,16 @@ import UIKit
 import LeagueAPI
 import SwiftUI
 
-class LandingViewController: ViewController<LandingView> {
+enum DBKey: String {
+    case onboardingComplete = "DLOnboardingComplete"
+}
 
-    private let settings: Settings
+class LandingViewController: ViewController<LandingView> {
     
-    init(settings: Settings) {
-        self.settings = settings
-        
+    let db: UserDefaults
+    
+    init(db: UserDefaults = .standard) {
+        self.db = db
         super.init()
         controllerView = LandingView()
     }
@@ -32,8 +35,7 @@ class LandingViewController: ViewController<LandingView> {
     }
     
     @objc private func enterButtonPressed() {
-        guard let code = controllerView.languageCode else { return }
-        settings.preferredLanguage = code
+        db.set(true, forKey: DBKey.onboardingComplete.rawValue)
         getNavigator()?.navigate(.setRoot(view: .home), self)
     }
 }
@@ -46,7 +48,7 @@ struct LandingPreview: PreviewProvider {
     
     struct PreviewView: UIViewControllerRepresentable {
         func makeUIViewController(context: UIViewControllerRepresentableContext<LandingPreview.PreviewView>) -> UIViewController {
-            return LandingViewController(settings: Settings())
+            return LandingViewController()
         }
         
         func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<LandingPreview.PreviewView>) {

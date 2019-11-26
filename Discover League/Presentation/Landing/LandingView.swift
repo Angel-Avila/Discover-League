@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PinLayout
 
 class LandingView: DLView {
     
@@ -69,18 +70,46 @@ class LandingView: DLView {
         return view
     }()
     
-    lazy private var formView = LandingFormView()
+    lazy private var container: UIView = {
+        let view = UIView()
+        view.backgroundColor = .secondarySystemBackground
+        view.layer.cornerRadius = 8
+        view.float()
+        view.alpha = 0
+        return view
+    }()
     
-    var languageCode: String? {
-        get {
-            formView.languageCode
-        }
-    }
+    private var title: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 34, weight: .bold)
+        label.textColor = .label
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        label.text = "Welcome to\nDiscover League!"
+        return label
+    }()
+    
+    private var disclaimer: UITextView = {
+        let textView = UITextView()
+        textView.font = UIFont.preferredFont(forTextStyle: .body)
+        textView.textColor = .secondaryLabel
+        textView.backgroundColor = .tertiarySystemBackground
+        textView.layer.cornerRadius = 8
+        textView.isEditable = false
+        textView.text = "This app was made to discover more of League of Legend's great champions, what they do and their artwork.\n" +
+            "It uses offline resources provided by Riot games so you don't have to woorry about your data plan.\n\n" +
+            "DISCLAIMER: Discoover League isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc."
+        return textView
+    }()
+    
+    lazy private var enterButton = UIButton.colorButton(color: .systemOrange, height: 50, font: .bold, textColor: .white, localizableTitle: "enter", buttonType: .rounded, shadowType: .defaultShadow)
     
     override init() {
         super.init()
-        addSubviews([backgroundImage, backgroundCover, logoView, logoImage, innerCircleView, outerCircleView, formView])
-        formView.alpha = 0
+        container.addSubview(title)
+        container.addSubview(disclaimer)
+        container.addSubview(enterButton)
+        addSubviews([backgroundImage, backgroundCover, logoView, logoImage, innerCircleView, outerCircleView, container])
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -88,7 +117,7 @@ class LandingView: DLView {
     }
     
     func addEnterButtonTarget(target: Any?, action: Selector, for controlEvent: UIControl.Event) {
-        formView.addEnterButtonTarget(target: target, action: action, for: controlEvent)
+        enterButton.addTarget(target, action: action, for: controlEvent)
     }
     
     override func setupUI() {
@@ -98,12 +127,23 @@ class LandingView: DLView {
 
         [logoView, logoImage, innerCircleView, outerCircleView].forEach { $0.pin.center() }
         
-        formView.pin
+        container.pin
             .hCenter()
             .top(logoTargetY + logoSize + 30)
             .width(UIScreen.main.bounds.width - 60)
-            .height(200)
+            .height(66%)
         
+        title.pin.top(20)
+            .horizontally(20)
+            .sizeToFit(.width)
+        
+        enterButton.pin.bottom(20)
+            .hCenter()
+            .size(.init(width: 140, height: 50))
+        
+        disclaimer.pin.verticallyBetween(title, and: enterButton)
+            .horizontally(20)
+            .marginVertical(20)
     }
     
     func animateAppearance() {
@@ -134,7 +174,7 @@ class LandingView: DLView {
     
     private func animateFormAppearing() {
         UIView.animate(withDuration: 0.3, delay: 0.3, options: .curveLinear, animations: {
-            self.formView.alpha = 1
+            self.container.alpha = 1
         })
     }
 }

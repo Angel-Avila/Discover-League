@@ -28,11 +28,9 @@
 		0B7E4D59238B102E00F54F86 /* SmallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7E4D58238B102E00F54F86 /* SmallCell.swift */; };
 		0B91482D238710350003F2C1 /* sections.json in Resources */ = {isa = PBXBuildFile; fileRef = 0B91482C238710350003F2C1 /* sections.json */; };
 		0BB2679E238259F100C89763 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2679D238259F100C89763 /* UIButton+.swift */; };
-		0BD071E3238323C000C3DA0B /* DLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD071E2238323C000C3DA0B /* DLClient.swift */; };
 		0BD071E623832DCE00C3DA0B /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD071E523832DCE00C3DA0B /* Navigator.swift */; };
 		0BD071E823832DF000C3DA0B /* ComponentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD071E723832DF000C3DA0B /* ComponentProvider.swift */; };
 		0BD071EA23832F2A00C3DA0B /* Authorization.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BD071E923832F2A00C3DA0B /* Authorization.plist */; };
-		0BD071ED2383305300C3DA0B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD071EC2383305300C3DA0B /* Settings.swift */; };
 		0BD071F02383BB1E00C3DA0B /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD071EF2383BB1E00C3DA0B /* Champion.swift */; };
 		0BD0760F23846F9100C3DA0B /* JarvanIV.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BD0745923846F9000C3DA0B /* JarvanIV.json */; };
 		0BD0761023846F9100C3DA0B /* AurelionSol.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BD0745B23846F9000C3DA0B /* AurelionSol.json */; };
@@ -181,7 +179,6 @@
 		0BD0769F23846F9100C3DA0B /* Taric.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BD0757923846F9100C3DA0B /* Taric.json */; };
 		0BD076A023846F9100C3DA0B /* Cassiopeia.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BD0757B23846F9100C3DA0B /* Cassiopeia.json */; };
 		0BD077C923847F8F00C3DA0B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD077C823847F8F00C3DA0B /* HomeViewController.swift */; };
-		0BE07C4A238110E800B39433 /* LandingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE07C49238110E800B39433 /* LandingFormView.swift */; };
 		0BE07C4C2381136C00B39433 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE07C4B2381136C00B39433 /* String+.swift */; };
 		0BE07C4F2381140F00B39433 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BE07C512381140F00B39433 /* Localizable.strings */; };
 		0BF0EEC0237DEA4E002861BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0EEBF237DEA4E002861BC /* AppDelegate.swift */; };
@@ -215,11 +212,9 @@
 		0B7E4D58238B102E00F54F86 /* SmallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCell.swift; sourceTree = "<group>"; };
 		0B91482C238710350003F2C1 /* sections.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sections.json; sourceTree = "<group>"; };
 		0BB2679D238259F100C89763 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
-		0BD071E2238323C000C3DA0B /* DLClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DLClient.swift; sourceTree = "<group>"; };
 		0BD071E523832DCE00C3DA0B /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		0BD071E723832DF000C3DA0B /* ComponentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentProvider.swift; sourceTree = "<group>"; };
 		0BD071E923832F2A00C3DA0B /* Authorization.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Authorization.plist; sourceTree = "<group>"; };
-		0BD071EC2383305300C3DA0B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		0BD071EF2383BB1E00C3DA0B /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
 		0BD0745A23846F9000C3DA0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/JarvanIV.json; sourceTree = "<group>"; };
 		0BD0745C23846F9000C3DA0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/AurelionSol.json; sourceTree = "<group>"; };
@@ -367,305 +362,9 @@
 		0BD0757823846F9100C3DA0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Kaisa.json; sourceTree = "<group>"; };
 		0BD0757A23846F9100C3DA0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Taric.json; sourceTree = "<group>"; };
 		0BD0757C23846F9100C3DA0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Cassiopeia.json; sourceTree = "<group>"; };
-		0BD0757D23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/JarvanIV.json"; sourceTree = "<group>"; };
-		0BD0757E23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/AurelionSol.json"; sourceTree = "<group>"; };
-		0BD0757F23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Riven.json"; sourceTree = "<group>"; };
-		0BD0758023846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Shyvana.json"; sourceTree = "<group>"; };
-		0BD0758123846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Yuumi.json"; sourceTree = "<group>"; };
-		0BD0758223846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/KogMaw.json"; sourceTree = "<group>"; };
-		0BD0758323846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Velkoz.json"; sourceTree = "<group>"; };
-		0BD0758423846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Ekko.json"; sourceTree = "<group>"; };
-		0BD0758523846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Hecarim.json"; sourceTree = "<group>"; };
-		0BD0758623846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Malphite.json"; sourceTree = "<group>"; };
-		0BD0758723846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Kalista.json"; sourceTree = "<group>"; };
-		0BD0758823846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Zac.json"; sourceTree = "<group>"; };
-		0BD0758923846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Nocturne.json"; sourceTree = "<group>"; };
-		0BD0758A23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Janna.json"; sourceTree = "<group>"; };
-		0BD0758B23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Darius.json"; sourceTree = "<group>"; };
-		0BD0758C23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Vladimir.json"; sourceTree = "<group>"; };
-		0BD0758D23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Pyke.json"; sourceTree = "<group>"; };
-		0BD0758E23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Brand.json"; sourceTree = "<group>"; };
-		0BD0758F23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Urgot.json"; sourceTree = "<group>"; };
-		0BD0759023846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Ahri.json"; sourceTree = "<group>"; };
-		0BD0759123846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Skarner.json"; sourceTree = "<group>"; };
-		0BD0759223846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Leblanc.json"; sourceTree = "<group>"; };
-		0BD0759323846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Jinx.json"; sourceTree = "<group>"; };
-		0BD0759423846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Leona.json"; sourceTree = "<group>"; };
-		0BD0759523846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Swain.json"; sourceTree = "<group>"; };
-		0BD0759623846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Shen.json"; sourceTree = "<group>"; };
-		0BD0759723846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Trundle.json"; sourceTree = "<group>"; };
-		0BD0759823846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Karma.json"; sourceTree = "<group>"; };
-		0BD0759923846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Camille.json"; sourceTree = "<group>"; };
-		0BD0759A23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Soraka.json"; sourceTree = "<group>"; };
-		0BD0759B23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Lucian.json"; sourceTree = "<group>"; };
-		0BD0759C23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Amumu.json"; sourceTree = "<group>"; };
-		0BD0759D23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Kayle.json"; sourceTree = "<group>"; };
-		0BD0759E23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Draven.json"; sourceTree = "<group>"; };
-		0BD0759F23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Jhin.json"; sourceTree = "<group>"; };
-		0BD075A023846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/MonkeyKing.json"; sourceTree = "<group>"; };
-		0BD075A123846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Sivir.json"; sourceTree = "<group>"; };
-		0BD075A223846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Zed.json"; sourceTree = "<group>"; };
-		0BD075A323846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Chogath.json"; sourceTree = "<group>"; };
-		0BD075A423846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Blitzcrank.json"; sourceTree = "<group>"; };
-		0BD075A523846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Ezreal.json"; sourceTree = "<group>"; };
-		0BD075A623846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Lux.json"; sourceTree = "<group>"; };
-		0BD075A723846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Khazix.json"; sourceTree = "<group>"; };
-		0BD075A823846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Udyr.json"; sourceTree = "<group>"; };
-		0BD075A923846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Volibear.json"; sourceTree = "<group>"; };
-		0BD075AA23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Nasus.json"; sourceTree = "<group>"; };
-		0BD075AB23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Nami.json"; sourceTree = "<group>"; };
-		0BD075AC23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Diana.json"; sourceTree = "<group>"; };
-		0BD075AD23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Singed.json"; sourceTree = "<group>"; };
-		0BD075AE23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Kassadin.json"; sourceTree = "<group>"; };
-		0BD075AF23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Caitlyn.json"; sourceTree = "<group>"; };
-		0BD075B023846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Annie.json"; sourceTree = "<group>"; };
-		0BD075B123846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/TahmKench.json"; sourceTree = "<group>"; };
-		0BD075B223846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Syndra.json"; sourceTree = "<group>"; };
-		0BD075B323846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Poppy.json"; sourceTree = "<group>"; };
-		0BD075B423846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Garen.json"; sourceTree = "<group>"; };
-		0BD075B523846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/XinZhao.json"; sourceTree = "<group>"; };
-		0BD075B623846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Twitch.json"; sourceTree = "<group>"; };
-		0BD075B723846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Alistar.json"; sourceTree = "<group>"; };
-		0BD075B823846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Anivia.json"; sourceTree = "<group>"; };
-		0BD075B923846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Sion.json"; sourceTree = "<group>"; };
-		0BD075BA23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/MasterYi.json"; sourceTree = "<group>"; };
-		0BD075BB23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Graves.json"; sourceTree = "<group>"; };
-		0BD075BC23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Yasuo.json"; sourceTree = "<group>"; };
-		0BD075BD23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Kayn.json"; sourceTree = "<group>"; };
-		0BD075BE23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Akali.json"; sourceTree = "<group>"; };
-		0BD075BF23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Neeko.json"; sourceTree = "<group>"; };
-		0BD075C023846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Kindred.json"; sourceTree = "<group>"; };
-		0BD075C123846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Elise.json"; sourceTree = "<group>"; };
-		0BD075C223846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Sylas.json"; sourceTree = "<group>"; };
-		0BD075C323846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Karthus.json"; sourceTree = "<group>"; };
-		0BD075C423846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Sejuani.json"; sourceTree = "<group>"; };
-		0BD075C523846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Warwick.json"; sourceTree = "<group>"; };
-		0BD075C623846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Heimerdinger.json"; sourceTree = "<group>"; };
-		0BD075C723846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Sona.json"; sourceTree = "<group>"; };
-		0BD075C823846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/TwistedFate.json"; sourceTree = "<group>"; };
-		0BD075C923846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/RekSai.json"; sourceTree = "<group>"; };
-		0BD075CA23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Senna.json"; sourceTree = "<group>"; };
-		0BD075CB23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Shaco.json"; sourceTree = "<group>"; };
-		0BD075CC23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Jayce.json"; sourceTree = "<group>"; };
-		0BD075CD23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Ornn.json"; sourceTree = "<group>"; };
-		0BD075CE23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Kennen.json"; sourceTree = "<group>"; };
-		0BD075CF23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Varus.json"; sourceTree = "<group>"; };
-		0BD075D023846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Nautilus.json"; sourceTree = "<group>"; };
-		0BD075D123846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Rumble.json"; sourceTree = "<group>"; };
-		0BD075D223846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Mordekaiser.json"; sourceTree = "<group>"; };
-		0BD075D323846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/LeeSin.json"; sourceTree = "<group>"; };
-		0BD075D423846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Veigar.json"; sourceTree = "<group>"; };
-		0BD075D523846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Tryndamere.json"; sourceTree = "<group>"; };
-		0BD075D623846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Ivern.json"; sourceTree = "<group>"; };
-		0BD075D723846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Xerath.json"; sourceTree = "<group>"; };
-		0BD075D823846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Thresh.json"; sourceTree = "<group>"; };
-		0BD075D923846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Talon.json"; sourceTree = "<group>"; };
-		0BD075DA23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Ryze.json"; sourceTree = "<group>"; };
-		0BD075DB23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Viktor.json"; sourceTree = "<group>"; };
-		0BD075DC23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Fiora.json"; sourceTree = "<group>"; };
-		0BD075DD23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Azir.json"; sourceTree = "<group>"; };
-		0BD075DE23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Zoe.json"; sourceTree = "<group>"; };
-		0BD075DF23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Jax.json"; sourceTree = "<group>"; };
-		0BD075E023846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Rengar.json"; sourceTree = "<group>"; };
-		0BD075E123846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Taliyah.json"; sourceTree = "<group>"; };
-		0BD075E223846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Vayne.json"; sourceTree = "<group>"; };
-		0BD075E323846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Yorick.json"; sourceTree = "<group>"; };
-		0BD075E423846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Bard.json"; sourceTree = "<group>"; };
-		0BD075E523846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Braum.json"; sourceTree = "<group>"; };
-		0BD075E623846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Nunu.json"; sourceTree = "<group>"; };
-		0BD075E723846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Gangplank.json"; sourceTree = "<group>"; };
-		0BD075E823846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Tristana.json"; sourceTree = "<group>"; };
-		0BD075E923846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Corki.json"; sourceTree = "<group>"; };
-		0BD075EA23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Malzahar.json"; sourceTree = "<group>"; };
-		0BD075EB23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Gragas.json"; sourceTree = "<group>"; };
-		0BD075EC23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Teemo.json"; sourceTree = "<group>"; };
-		0BD075ED23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Lissandra.json"; sourceTree = "<group>"; };
-		0BD075EE23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Fizz.json"; sourceTree = "<group>"; };
-		0BD075EF23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Morgana.json"; sourceTree = "<group>"; };
-		0BD075F023846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Evelynn.json"; sourceTree = "<group>"; };
-		0BD075F123846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Gnar.json"; sourceTree = "<group>"; };
-		0BD075F223846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Ziggs.json"; sourceTree = "<group>"; };
-		0BD075F323846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Vi.json"; sourceTree = "<group>"; };
-		0BD075F423846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Irelia.json"; sourceTree = "<group>"; };
-		0BD075F523846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Ashe.json"; sourceTree = "<group>"; };
-		0BD075F623846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Nidalee.json"; sourceTree = "<group>"; };
-		0BD075F723846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/DrMundo.json"; sourceTree = "<group>"; };
-		0BD075F823846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Zilean.json"; sourceTree = "<group>"; };
-		0BD075F923846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Qiyana.json"; sourceTree = "<group>"; };
-		0BD075FA23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Lulu.json"; sourceTree = "<group>"; };
-		0BD075FB23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Katarina.json"; sourceTree = "<group>"; };
-		0BD075FC23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Illaoi.json"; sourceTree = "<group>"; };
-		0BD075FD23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Aatrox.json"; sourceTree = "<group>"; };
-		0BD075FE23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Zyra.json"; sourceTree = "<group>"; };
-		0BD075FF23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Kled.json"; sourceTree = "<group>"; };
-		0BD0760023846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Renekton.json"; sourceTree = "<group>"; };
-		0BD0760123846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Pantheon.json"; sourceTree = "<group>"; };
-		0BD0760223846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Fiddlesticks.json"; sourceTree = "<group>"; };
-		0BD0760323846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Olaf.json"; sourceTree = "<group>"; };
-		0BD0760423846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Rakan.json"; sourceTree = "<group>"; };
-		0BD0760523846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Quinn.json"; sourceTree = "<group>"; };
-		0BD0760623846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Orianna.json"; sourceTree = "<group>"; };
-		0BD0760723846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Maokai.json"; sourceTree = "<group>"; };
-		0BD0760823846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Xayah.json"; sourceTree = "<group>"; };
-		0BD0760923846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Rammus.json"; sourceTree = "<group>"; };
-		0BD0760A23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Galio.json"; sourceTree = "<group>"; };
-		0BD0760B23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/MissFortune.json"; sourceTree = "<group>"; };
-		0BD0760C23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Kaisa.json"; sourceTree = "<group>"; };
-		0BD0760D23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Taric.json"; sourceTree = "<group>"; };
-		0BD0760E23846F9100C3DA0B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = "es-419"; path = "es-419.lproj/Cassiopeia.json"; sourceTree = "<group>"; };
-		0BD07734238475CE00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Shyvana.json; sourceTree = "<group>"; };
-		0BD07735238475CE00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Yuumi.json; sourceTree = "<group>"; };
-		0BD07736238475CF00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/KogMaw.json; sourceTree = "<group>"; };
-		0BD07737238475CF00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Velkoz.json; sourceTree = "<group>"; };
-		0BD07738238475CF00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Ekko.json; sourceTree = "<group>"; };
-		0BD07739238475CF00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Hecarim.json; sourceTree = "<group>"; };
-		0BD0773A238475CF00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Malphite.json; sourceTree = "<group>"; };
-		0BD0773B238475D000C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Kalista.json; sourceTree = "<group>"; };
-		0BD0773C238475D000C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Zac.json; sourceTree = "<group>"; };
-		0BD0773D238475D000C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Nocturne.json; sourceTree = "<group>"; };
-		0BD0773E238475D000C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Janna.json; sourceTree = "<group>"; };
-		0BD0773F238475D100C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Darius.json; sourceTree = "<group>"; };
-		0BD07740238475D100C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Vladimir.json; sourceTree = "<group>"; };
-		0BD07741238475D100C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Pyke.json; sourceTree = "<group>"; };
-		0BD07742238475D100C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Brand.json; sourceTree = "<group>"; };
-		0BD07743238475D100C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Urgot.json; sourceTree = "<group>"; };
-		0BD07744238475D200C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Ahri.json; sourceTree = "<group>"; };
-		0BD07745238475D200C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Skarner.json; sourceTree = "<group>"; };
-		0BD07746238475D200C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Leblanc.json; sourceTree = "<group>"; };
-		0BD07747238475D200C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Jinx.json; sourceTree = "<group>"; };
-		0BD07748238475D200C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Leona.json; sourceTree = "<group>"; };
-		0BD07749238475D300C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Swain.json; sourceTree = "<group>"; };
-		0BD0774A238475D300C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Shen.json; sourceTree = "<group>"; };
-		0BD0774B238475D300C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Trundle.json; sourceTree = "<group>"; };
-		0BD0774C238475D300C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Karma.json; sourceTree = "<group>"; };
-		0BD0774D238475D300C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Camille.json; sourceTree = "<group>"; };
-		0BD0774E238475D400C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Soraka.json; sourceTree = "<group>"; };
-		0BD0774F238475D400C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Lucian.json; sourceTree = "<group>"; };
-		0BD07750238475D400C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Amumu.json; sourceTree = "<group>"; };
-		0BD07751238475D400C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Kayle.json; sourceTree = "<group>"; };
-		0BD07752238475D400C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Draven.json; sourceTree = "<group>"; };
-		0BD07753238475D500C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Jhin.json; sourceTree = "<group>"; };
-		0BD07754238475D500C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/MonkeyKing.json; sourceTree = "<group>"; };
-		0BD07755238475D500C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Sivir.json; sourceTree = "<group>"; };
-		0BD07756238475D500C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Zed.json; sourceTree = "<group>"; };
-		0BD07757238475D600C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Chogath.json; sourceTree = "<group>"; };
-		0BD07758238475D600C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Blitzcrank.json; sourceTree = "<group>"; };
-		0BD07759238475D600C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Ezreal.json; sourceTree = "<group>"; };
-		0BD0775A238475D600C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Lux.json; sourceTree = "<group>"; };
-		0BD0775B238475D700C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Khazix.json; sourceTree = "<group>"; };
-		0BD0775C238475D700C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Udyr.json; sourceTree = "<group>"; };
-		0BD0775D238475D700C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Volibear.json; sourceTree = "<group>"; };
-		0BD0775E238475D700C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Nasus.json; sourceTree = "<group>"; };
-		0BD0775F238475D800C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Nami.json; sourceTree = "<group>"; };
-		0BD07760238475D800C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Diana.json; sourceTree = "<group>"; };
-		0BD07761238475D800C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Singed.json; sourceTree = "<group>"; };
-		0BD07762238475D800C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Kassadin.json; sourceTree = "<group>"; };
-		0BD07763238475D900C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Caitlyn.json; sourceTree = "<group>"; };
-		0BD07764238475D900C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Annie.json; sourceTree = "<group>"; };
-		0BD07765238475D900C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/TahmKench.json; sourceTree = "<group>"; };
-		0BD07766238475D900C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Syndra.json; sourceTree = "<group>"; };
-		0BD07767238475D900C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Poppy.json; sourceTree = "<group>"; };
-		0BD07768238475DA00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Garen.json; sourceTree = "<group>"; };
-		0BD07769238475DA00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/XinZhao.json; sourceTree = "<group>"; };
-		0BD0776A238475DA00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Twitch.json; sourceTree = "<group>"; };
-		0BD0776B238475DA00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Alistar.json; sourceTree = "<group>"; };
-		0BD0776C238475DB00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Anivia.json; sourceTree = "<group>"; };
-		0BD0776D238475DB00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Sion.json; sourceTree = "<group>"; };
-		0BD0776E238475DB00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/MasterYi.json; sourceTree = "<group>"; };
-		0BD0776F238475DB00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Graves.json; sourceTree = "<group>"; };
-		0BD07770238475DB00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Yasuo.json; sourceTree = "<group>"; };
-		0BD07771238475DC00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Kayn.json; sourceTree = "<group>"; };
-		0BD07772238475DC00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Akali.json; sourceTree = "<group>"; };
-		0BD07773238475DC00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Neeko.json; sourceTree = "<group>"; };
-		0BD07774238475DC00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Kindred.json; sourceTree = "<group>"; };
-		0BD07775238475DD00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Elise.json; sourceTree = "<group>"; };
-		0BD07776238475DD00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Sylas.json; sourceTree = "<group>"; };
-		0BD07777238475DD00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Karthus.json; sourceTree = "<group>"; };
-		0BD07778238475DD00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Sejuani.json; sourceTree = "<group>"; };
-		0BD07779238475DD00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Warwick.json; sourceTree = "<group>"; };
-		0BD0777A238475DE00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Heimerdinger.json; sourceTree = "<group>"; };
-		0BD0777B238475DE00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Sona.json; sourceTree = "<group>"; };
-		0BD0777C238475DE00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/TwistedFate.json; sourceTree = "<group>"; };
-		0BD0777D238475DE00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/RekSai.json; sourceTree = "<group>"; };
-		0BD0777E238475DF00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Senna.json; sourceTree = "<group>"; };
-		0BD0777F238475DF00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Shaco.json; sourceTree = "<group>"; };
-		0BD07780238475DF00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Jayce.json; sourceTree = "<group>"; };
-		0BD07781238475DF00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Ornn.json; sourceTree = "<group>"; };
-		0BD07782238475DF00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Kennen.json; sourceTree = "<group>"; };
-		0BD07783238475E000C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Varus.json; sourceTree = "<group>"; };
-		0BD07784238475E000C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Nautilus.json; sourceTree = "<group>"; };
-		0BD07785238475E000C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Rumble.json; sourceTree = "<group>"; };
-		0BD07786238475E000C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Mordekaiser.json; sourceTree = "<group>"; };
-		0BD07787238475E000C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/LeeSin.json; sourceTree = "<group>"; };
-		0BD07788238475E100C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Veigar.json; sourceTree = "<group>"; };
-		0BD07789238475E100C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Tryndamere.json; sourceTree = "<group>"; };
-		0BD0778A238475E100C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Ivern.json; sourceTree = "<group>"; };
-		0BD0778B238475E100C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Xerath.json; sourceTree = "<group>"; };
-		0BD0778C238475E100C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Thresh.json; sourceTree = "<group>"; };
-		0BD0778D238475E200C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Talon.json; sourceTree = "<group>"; };
-		0BD0778E238475E200C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Ryze.json; sourceTree = "<group>"; };
-		0BD0778F238475E200C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Viktor.json; sourceTree = "<group>"; };
-		0BD07790238475E200C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Fiora.json; sourceTree = "<group>"; };
-		0BD07791238475E300C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Azir.json; sourceTree = "<group>"; };
-		0BD07792238475E300C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Zoe.json; sourceTree = "<group>"; };
-		0BD07793238475E300C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Jax.json; sourceTree = "<group>"; };
-		0BD07794238475E300C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Rengar.json; sourceTree = "<group>"; };
-		0BD07795238475E400C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Taliyah.json; sourceTree = "<group>"; };
-		0BD07796238475E400C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Vayne.json; sourceTree = "<group>"; };
-		0BD07797238475E400C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Yorick.json; sourceTree = "<group>"; };
-		0BD07798238475E400C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Bard.json; sourceTree = "<group>"; };
-		0BD07799238475E500C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Braum.json; sourceTree = "<group>"; };
-		0BD0779A238475E500C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Nunu.json; sourceTree = "<group>"; };
-		0BD0779B238475E500C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Gangplank.json; sourceTree = "<group>"; };
-		0BD0779C238475E500C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Tristana.json; sourceTree = "<group>"; };
-		0BD0779D238475E600C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Corki.json; sourceTree = "<group>"; };
-		0BD0779E238475E600C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Malzahar.json; sourceTree = "<group>"; };
-		0BD0779F238475E600C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Gragas.json; sourceTree = "<group>"; };
-		0BD077A0238475E600C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Teemo.json; sourceTree = "<group>"; };
-		0BD077A1238475E700C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Lissandra.json; sourceTree = "<group>"; };
-		0BD077A2238475E700C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Fizz.json; sourceTree = "<group>"; };
-		0BD077A3238475E700C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Morgana.json; sourceTree = "<group>"; };
-		0BD077A4238475E700C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Evelynn.json; sourceTree = "<group>"; };
-		0BD077A5238475E700C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Gnar.json; sourceTree = "<group>"; };
-		0BD077A6238475E800C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Ziggs.json; sourceTree = "<group>"; };
-		0BD077A7238475E800C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Vi.json; sourceTree = "<group>"; };
-		0BD077A8238475E800C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Irelia.json; sourceTree = "<group>"; };
-		0BD077A9238475E800C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Ashe.json; sourceTree = "<group>"; };
-		0BD077AA238475E800C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Nidalee.json; sourceTree = "<group>"; };
-		0BD077AB238475E900C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/DrMundo.json; sourceTree = "<group>"; };
-		0BD077AC238475E900C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Zilean.json; sourceTree = "<group>"; };
-		0BD077AD238475E900C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Qiyana.json; sourceTree = "<group>"; };
-		0BD077AE238475E900C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Lulu.json; sourceTree = "<group>"; };
-		0BD077AF238475E900C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Katarina.json; sourceTree = "<group>"; };
-		0BD077B0238475EA00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Illaoi.json; sourceTree = "<group>"; };
-		0BD077B1238475EA00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Aatrox.json; sourceTree = "<group>"; };
-		0BD077B2238475EA00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Zyra.json; sourceTree = "<group>"; };
-		0BD077B3238475EA00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Kled.json; sourceTree = "<group>"; };
-		0BD077B4238475EB00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Renekton.json; sourceTree = "<group>"; };
-		0BD077B5238475EB00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Pantheon.json; sourceTree = "<group>"; };
-		0BD077B6238475EB00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Fiddlesticks.json; sourceTree = "<group>"; };
-		0BD077B7238475EB00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Olaf.json; sourceTree = "<group>"; };
-		0BD077B8238475EB00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0BD077B92384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/AurelionSol.json; sourceTree = "<group>"; };
-		0BD077BA2384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Maokai.json; sourceTree = "<group>"; };
-		0BD077BB2384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/MissFortune.json; sourceTree = "<group>"; };
-		0BD077BC2384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Cassiopeia.json; sourceTree = "<group>"; };
-		0BD077BD2384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Quinn.json; sourceTree = "<group>"; };
-		0BD077BE2384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Taric.json; sourceTree = "<group>"; };
-		0BD077BF2384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Rakan.json; sourceTree = "<group>"; };
-		0BD077C02384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Xayah.json; sourceTree = "<group>"; };
-		0BD077C12384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Galio.json; sourceTree = "<group>"; };
-		0BD077C22384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Orianna.json; sourceTree = "<group>"; };
-		0BD077C32384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/JarvanIV.json; sourceTree = "<group>"; };
-		0BD077C42384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Riven.json; sourceTree = "<group>"; };
-		0BD077C52384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Kaisa.json; sourceTree = "<group>"; };
-		0BD077C62384765E00C3DA0B /* de */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de; path = de.lproj/Rammus.json; sourceTree = "<group>"; };
 		0BD077C823847F8F00C3DA0B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		0BE07C49238110E800B39433 /* LandingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingFormView.swift; sourceTree = "<group>"; };
 		0BE07C4B2381136C00B39433 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		0BE07C502381140F00B39433 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0BE07C522381143000B39433 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		0BE07C532381143000B39433 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		0BF0EEBC237DEA4E002861BC /* Discover League.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discover League.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF0EEBF237DEA4E002861BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BF0EEC1237DEA4E002861BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -720,7 +419,6 @@
 		0B54AE762380CE1E009A5561 /* Landing */ = {
 			isa = PBXGroup;
 			children = (
-				0BE07C49238110E800B39433 /* LandingFormView.swift */,
 				0B3B51CE2380CC26004B01C4 /* LandingView.swift */,
 				0BF0EED3237DF6BD002861BC /* LandingViewController.swift */,
 			);
@@ -743,28 +441,12 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		0BD071E1238323AE00C3DA0B /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				0BD071E2238323C000C3DA0B /* DLClient.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		0BD071E423832DC500C3DA0B /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
 				0BD071E723832DF000C3DA0B /* ComponentProvider.swift */,
 			);
 			path = Navigation;
-			sourceTree = "<group>";
-		};
-		0BD071EB2383304B00C3DA0B /* UserSettings */ = {
-			isa = PBXGroup;
-			children = (
-				0BD071EC2383305300C3DA0B /* Settings.swift */,
-			);
-			path = UserSettings;
 			sourceTree = "<group>";
 		};
 		0BD071EE2383B93D00C3DA0B /* Model */ = {
@@ -970,9 +652,7 @@
 				0BF0EEBF237DEA4E002861BC /* AppDelegate.swift */,
 				0BD071F123846A2A00C3DA0B /* res */,
 				0BD071EE2383B93D00C3DA0B /* Model */,
-				0BD071EB2383304B00C3DA0B /* UserSettings */,
 				0BD071E423832DC500C3DA0B /* Navigation */,
-				0BD071E1238323AE00C3DA0B /* Network */,
 				0B3B51CD2380CC10004B01C4 /* Presentation */,
 				0B36B72223875FDF003E3EC2 /* View */,
 				0BD071E523832DCE00C3DA0B /* Navigator.swift */,
@@ -1057,8 +737,6 @@
 			knownRegions = (
 				en,
 				Base,
-				"es-419",
-				de,
 			);
 			mainGroup = 0BF0EEB3237DEA4E002861BC;
 			productRefGroup = 0BF0EEBD237DEA4E002861BC /* Products */;
@@ -1282,7 +960,6 @@
 				0B54AE822380CE87009A5561 /* UIImageView+.swift in Sources */,
 				0B3B51D12380CC3D004B01C4 /* ControllerView.swift in Sources */,
 				0BD071F02383BB1E00C3DA0B /* Champion.swift in Sources */,
-				0BD071E3238323C000C3DA0B /* DLClient.swift in Sources */,
 				0B039C0D2389B63000B38336 /* MediumCell.swift in Sources */,
 				0B36B7262387600E003E3EC2 /* FeaturedCell.swift in Sources */,
 				0B7E492A238775D400E0B4E9 /* SectionHeader.swift in Sources */,
@@ -1302,10 +979,8 @@
 				0B3B51D32380CC43004B01C4 /* ViewController.swift in Sources */,
 				0B36B728238762E5003E3EC2 /* TallCell.swift in Sources */,
 				0B36B72423875FFB003E3EC2 /* SelfConfiguringCell.swift in Sources */,
-				0BD071ED2383305300C3DA0B /* Settings.swift in Sources */,
 				0B7E4D57238B101800F54F86 /* SectionFooter.swift in Sources */,
 				0BB2679E238259F100C89763 /* UIButton+.swift in Sources */,
-				0BE07C4A238110E800B39433 /* LandingFormView.swift in Sources */,
 				0B7E4D59238B102E00F54F86 /* SmallCell.swift in Sources */,
 				0BE07C4C2381136C00B39433 /* String+.swift in Sources */,
 				0B54AE852380CE87009A5561 /* UIColor+.swift in Sources */,
@@ -1320,8 +995,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0745A23846F9000C3DA0B /* en */,
-				0BD0757D23846F9100C3DA0B /* es-419 */,
-				0BD077C32384765E00C3DA0B /* de */,
 			);
 			name = JarvanIV.json;
 			sourceTree = "<group>";
@@ -1330,8 +1003,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0745C23846F9000C3DA0B /* en */,
-				0BD0757E23846F9100C3DA0B /* es-419 */,
-				0BD077B92384765E00C3DA0B /* de */,
 			);
 			name = AurelionSol.json;
 			sourceTree = "<group>";
@@ -1340,8 +1011,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0745E23846F9000C3DA0B /* en */,
-				0BD0757F23846F9100C3DA0B /* es-419 */,
-				0BD077C42384765E00C3DA0B /* de */,
 			);
 			name = Riven.json;
 			sourceTree = "<group>";
@@ -1350,8 +1019,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0746023846F9000C3DA0B /* en */,
-				0BD0758023846F9100C3DA0B /* es-419 */,
-				0BD07734238475CE00C3DA0B /* de */,
 			);
 			name = Shyvana.json;
 			sourceTree = "<group>";
@@ -1360,8 +1027,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0746223846F9000C3DA0B /* en */,
-				0BD0758123846F9100C3DA0B /* es-419 */,
-				0BD07735238475CE00C3DA0B /* de */,
 			);
 			name = Yuumi.json;
 			sourceTree = "<group>";
@@ -1370,8 +1035,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0746423846F9000C3DA0B /* en */,
-				0BD0758223846F9100C3DA0B /* es-419 */,
-				0BD07736238475CF00C3DA0B /* de */,
 			);
 			name = KogMaw.json;
 			sourceTree = "<group>";
@@ -1380,8 +1043,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0746623846F9000C3DA0B /* en */,
-				0BD0758323846F9100C3DA0B /* es-419 */,
-				0BD07737238475CF00C3DA0B /* de */,
 			);
 			name = Velkoz.json;
 			sourceTree = "<group>";
@@ -1390,8 +1051,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0746823846F9000C3DA0B /* en */,
-				0BD0758423846F9100C3DA0B /* es-419 */,
-				0BD07738238475CF00C3DA0B /* de */,
 			);
 			name = Ekko.json;
 			sourceTree = "<group>";
@@ -1400,8 +1059,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0746A23846F9000C3DA0B /* en */,
-				0BD0758523846F9100C3DA0B /* es-419 */,
-				0BD07739238475CF00C3DA0B /* de */,
 			);
 			name = Hecarim.json;
 			sourceTree = "<group>";
@@ -1410,8 +1067,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0746C23846F9000C3DA0B /* en */,
-				0BD0758623846F9100C3DA0B /* es-419 */,
-				0BD0773A238475CF00C3DA0B /* de */,
 			);
 			name = Malphite.json;
 			sourceTree = "<group>";
@@ -1420,8 +1075,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0746E23846F9000C3DA0B /* en */,
-				0BD0758723846F9100C3DA0B /* es-419 */,
-				0BD0773B238475D000C3DA0B /* de */,
 			);
 			name = Kalista.json;
 			sourceTree = "<group>";
@@ -1430,8 +1083,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0747023846F9000C3DA0B /* en */,
-				0BD0758823846F9100C3DA0B /* es-419 */,
-				0BD0773C238475D000C3DA0B /* de */,
 			);
 			name = Zac.json;
 			sourceTree = "<group>";
@@ -1440,8 +1091,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0747223846F9000C3DA0B /* en */,
-				0BD0758923846F9100C3DA0B /* es-419 */,
-				0BD0773D238475D000C3DA0B /* de */,
 			);
 			name = Nocturne.json;
 			sourceTree = "<group>";
@@ -1450,8 +1099,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0747423846F9000C3DA0B /* en */,
-				0BD0758A23846F9100C3DA0B /* es-419 */,
-				0BD0773E238475D000C3DA0B /* de */,
 			);
 			name = Janna.json;
 			sourceTree = "<group>";
@@ -1460,8 +1107,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0747623846F9000C3DA0B /* en */,
-				0BD0758B23846F9100C3DA0B /* es-419 */,
-				0BD0773F238475D100C3DA0B /* de */,
 			);
 			name = Darius.json;
 			sourceTree = "<group>";
@@ -1470,8 +1115,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0747823846F9000C3DA0B /* en */,
-				0BD0758C23846F9100C3DA0B /* es-419 */,
-				0BD07740238475D100C3DA0B /* de */,
 			);
 			name = Vladimir.json;
 			sourceTree = "<group>";
@@ -1480,8 +1123,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0747A23846F9000C3DA0B /* en */,
-				0BD0758D23846F9100C3DA0B /* es-419 */,
-				0BD07741238475D100C3DA0B /* de */,
 			);
 			name = Pyke.json;
 			sourceTree = "<group>";
@@ -1490,8 +1131,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0747C23846F9000C3DA0B /* en */,
-				0BD0758E23846F9100C3DA0B /* es-419 */,
-				0BD07742238475D100C3DA0B /* de */,
 			);
 			name = Brand.json;
 			sourceTree = "<group>";
@@ -1500,8 +1139,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0747E23846F9000C3DA0B /* en */,
-				0BD0758F23846F9100C3DA0B /* es-419 */,
-				0BD07743238475D100C3DA0B /* de */,
 			);
 			name = Urgot.json;
 			sourceTree = "<group>";
@@ -1510,8 +1147,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0748023846F9000C3DA0B /* en */,
-				0BD0759023846F9100C3DA0B /* es-419 */,
-				0BD07744238475D200C3DA0B /* de */,
 			);
 			name = Ahri.json;
 			sourceTree = "<group>";
@@ -1520,8 +1155,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0748223846F9000C3DA0B /* en */,
-				0BD0759123846F9100C3DA0B /* es-419 */,
-				0BD07745238475D200C3DA0B /* de */,
 			);
 			name = Skarner.json;
 			sourceTree = "<group>";
@@ -1530,8 +1163,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0748423846F9000C3DA0B /* en */,
-				0BD0759223846F9100C3DA0B /* es-419 */,
-				0BD07746238475D200C3DA0B /* de */,
 			);
 			name = Leblanc.json;
 			sourceTree = "<group>";
@@ -1540,8 +1171,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0748623846F9000C3DA0B /* en */,
-				0BD0759323846F9100C3DA0B /* es-419 */,
-				0BD07747238475D200C3DA0B /* de */,
 			);
 			name = Jinx.json;
 			sourceTree = "<group>";
@@ -1550,8 +1179,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0748823846F9000C3DA0B /* en */,
-				0BD0759423846F9100C3DA0B /* es-419 */,
-				0BD07748238475D200C3DA0B /* de */,
 			);
 			name = Leona.json;
 			sourceTree = "<group>";
@@ -1560,8 +1187,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0748A23846F9000C3DA0B /* en */,
-				0BD0759523846F9100C3DA0B /* es-419 */,
-				0BD07749238475D300C3DA0B /* de */,
 			);
 			name = Swain.json;
 			sourceTree = "<group>";
@@ -1570,8 +1195,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0748C23846F9000C3DA0B /* en */,
-				0BD0759623846F9100C3DA0B /* es-419 */,
-				0BD0774A238475D300C3DA0B /* de */,
 			);
 			name = Shen.json;
 			sourceTree = "<group>";
@@ -1580,8 +1203,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0748E23846F9000C3DA0B /* en */,
-				0BD0759723846F9100C3DA0B /* es-419 */,
-				0BD0774B238475D300C3DA0B /* de */,
 			);
 			name = Trundle.json;
 			sourceTree = "<group>";
@@ -1590,8 +1211,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0749023846F9000C3DA0B /* en */,
-				0BD0759823846F9100C3DA0B /* es-419 */,
-				0BD0774C238475D300C3DA0B /* de */,
 			);
 			name = Karma.json;
 			sourceTree = "<group>";
@@ -1600,8 +1219,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0749223846F9000C3DA0B /* en */,
-				0BD0759923846F9100C3DA0B /* es-419 */,
-				0BD0774D238475D300C3DA0B /* de */,
 			);
 			name = Camille.json;
 			sourceTree = "<group>";
@@ -1610,8 +1227,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0749423846F9000C3DA0B /* en */,
-				0BD0759A23846F9100C3DA0B /* es-419 */,
-				0BD0774E238475D400C3DA0B /* de */,
 			);
 			name = Soraka.json;
 			sourceTree = "<group>";
@@ -1620,8 +1235,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0749623846F9000C3DA0B /* en */,
-				0BD0759B23846F9100C3DA0B /* es-419 */,
-				0BD0774F238475D400C3DA0B /* de */,
 			);
 			name = Lucian.json;
 			sourceTree = "<group>";
@@ -1630,8 +1243,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0749823846F9000C3DA0B /* en */,
-				0BD0759C23846F9100C3DA0B /* es-419 */,
-				0BD07750238475D400C3DA0B /* de */,
 			);
 			name = Amumu.json;
 			sourceTree = "<group>";
@@ -1640,8 +1251,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0749A23846F9000C3DA0B /* en */,
-				0BD0759D23846F9100C3DA0B /* es-419 */,
-				0BD07751238475D400C3DA0B /* de */,
 			);
 			name = Kayle.json;
 			sourceTree = "<group>";
@@ -1650,8 +1259,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0749C23846F9000C3DA0B /* en */,
-				0BD0759E23846F9100C3DA0B /* es-419 */,
-				0BD07752238475D400C3DA0B /* de */,
 			);
 			name = Draven.json;
 			sourceTree = "<group>";
@@ -1660,8 +1267,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0749E23846F9000C3DA0B /* en */,
-				0BD0759F23846F9100C3DA0B /* es-419 */,
-				0BD07753238475D500C3DA0B /* de */,
 			);
 			name = Jhin.json;
 			sourceTree = "<group>";
@@ -1670,8 +1275,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074A023846F9000C3DA0B /* en */,
-				0BD075A023846F9100C3DA0B /* es-419 */,
-				0BD07754238475D500C3DA0B /* de */,
 			);
 			name = MonkeyKing.json;
 			sourceTree = "<group>";
@@ -1680,8 +1283,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074A223846F9000C3DA0B /* en */,
-				0BD075A123846F9100C3DA0B /* es-419 */,
-				0BD07755238475D500C3DA0B /* de */,
 			);
 			name = Sivir.json;
 			sourceTree = "<group>";
@@ -1690,8 +1291,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074A423846F9000C3DA0B /* en */,
-				0BD075A223846F9100C3DA0B /* es-419 */,
-				0BD07756238475D500C3DA0B /* de */,
 			);
 			name = Zed.json;
 			sourceTree = "<group>";
@@ -1700,8 +1299,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074A623846F9000C3DA0B /* en */,
-				0BD075A323846F9100C3DA0B /* es-419 */,
-				0BD07757238475D600C3DA0B /* de */,
 			);
 			name = Chogath.json;
 			sourceTree = "<group>";
@@ -1710,8 +1307,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074A823846F9000C3DA0B /* en */,
-				0BD075A423846F9100C3DA0B /* es-419 */,
-				0BD07758238475D600C3DA0B /* de */,
 			);
 			name = Blitzcrank.json;
 			sourceTree = "<group>";
@@ -1720,8 +1315,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074AA23846F9000C3DA0B /* en */,
-				0BD075A523846F9100C3DA0B /* es-419 */,
-				0BD07759238475D600C3DA0B /* de */,
 			);
 			name = Ezreal.json;
 			sourceTree = "<group>";
@@ -1730,8 +1323,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074AC23846F9000C3DA0B /* en */,
-				0BD075A623846F9100C3DA0B /* es-419 */,
-				0BD0775A238475D600C3DA0B /* de */,
 			);
 			name = Lux.json;
 			sourceTree = "<group>";
@@ -1740,8 +1331,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074AE23846F9000C3DA0B /* en */,
-				0BD075A723846F9100C3DA0B /* es-419 */,
-				0BD0775B238475D700C3DA0B /* de */,
 			);
 			name = Khazix.json;
 			sourceTree = "<group>";
@@ -1750,8 +1339,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074B023846F9000C3DA0B /* en */,
-				0BD075A823846F9100C3DA0B /* es-419 */,
-				0BD0775C238475D700C3DA0B /* de */,
 			);
 			name = Udyr.json;
 			sourceTree = "<group>";
@@ -1760,8 +1347,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074B223846F9000C3DA0B /* en */,
-				0BD075A923846F9100C3DA0B /* es-419 */,
-				0BD0775D238475D700C3DA0B /* de */,
 			);
 			name = Volibear.json;
 			sourceTree = "<group>";
@@ -1770,8 +1355,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074B423846F9000C3DA0B /* en */,
-				0BD075AA23846F9100C3DA0B /* es-419 */,
-				0BD0775E238475D700C3DA0B /* de */,
 			);
 			name = Nasus.json;
 			sourceTree = "<group>";
@@ -1780,8 +1363,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074B623846F9000C3DA0B /* en */,
-				0BD075AB23846F9100C3DA0B /* es-419 */,
-				0BD0775F238475D800C3DA0B /* de */,
 			);
 			name = Nami.json;
 			sourceTree = "<group>";
@@ -1790,8 +1371,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074B823846F9000C3DA0B /* en */,
-				0BD075AC23846F9100C3DA0B /* es-419 */,
-				0BD07760238475D800C3DA0B /* de */,
 			);
 			name = Diana.json;
 			sourceTree = "<group>";
@@ -1800,8 +1379,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074BA23846F9000C3DA0B /* en */,
-				0BD075AD23846F9100C3DA0B /* es-419 */,
-				0BD07761238475D800C3DA0B /* de */,
 			);
 			name = Singed.json;
 			sourceTree = "<group>";
@@ -1810,8 +1387,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074BC23846F9000C3DA0B /* en */,
-				0BD075AE23846F9100C3DA0B /* es-419 */,
-				0BD07762238475D800C3DA0B /* de */,
 			);
 			name = Kassadin.json;
 			sourceTree = "<group>";
@@ -1820,8 +1395,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074BE23846F9000C3DA0B /* en */,
-				0BD075AF23846F9100C3DA0B /* es-419 */,
-				0BD07763238475D900C3DA0B /* de */,
 			);
 			name = Caitlyn.json;
 			sourceTree = "<group>";
@@ -1830,8 +1403,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074C023846F9000C3DA0B /* en */,
-				0BD075B023846F9100C3DA0B /* es-419 */,
-				0BD07764238475D900C3DA0B /* de */,
 			);
 			name = Annie.json;
 			sourceTree = "<group>";
@@ -1840,8 +1411,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074C223846F9000C3DA0B /* en */,
-				0BD075B123846F9100C3DA0B /* es-419 */,
-				0BD07765238475D900C3DA0B /* de */,
 			);
 			name = TahmKench.json;
 			sourceTree = "<group>";
@@ -1850,8 +1419,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074C423846F9000C3DA0B /* en */,
-				0BD075B223846F9100C3DA0B /* es-419 */,
-				0BD07766238475D900C3DA0B /* de */,
 			);
 			name = Syndra.json;
 			sourceTree = "<group>";
@@ -1860,8 +1427,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074C623846F9000C3DA0B /* en */,
-				0BD075B323846F9100C3DA0B /* es-419 */,
-				0BD07767238475D900C3DA0B /* de */,
 			);
 			name = Poppy.json;
 			sourceTree = "<group>";
@@ -1870,8 +1435,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074C823846F9000C3DA0B /* en */,
-				0BD075B423846F9100C3DA0B /* es-419 */,
-				0BD07768238475DA00C3DA0B /* de */,
 			);
 			name = Garen.json;
 			sourceTree = "<group>";
@@ -1880,8 +1443,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074CA23846F9000C3DA0B /* en */,
-				0BD075B523846F9100C3DA0B /* es-419 */,
-				0BD07769238475DA00C3DA0B /* de */,
 			);
 			name = XinZhao.json;
 			sourceTree = "<group>";
@@ -1890,8 +1451,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074CC23846F9000C3DA0B /* en */,
-				0BD075B623846F9100C3DA0B /* es-419 */,
-				0BD0776A238475DA00C3DA0B /* de */,
 			);
 			name = Twitch.json;
 			sourceTree = "<group>";
@@ -1900,8 +1459,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074CE23846F9000C3DA0B /* en */,
-				0BD075B723846F9100C3DA0B /* es-419 */,
-				0BD0776B238475DA00C3DA0B /* de */,
 			);
 			name = Alistar.json;
 			sourceTree = "<group>";
@@ -1910,8 +1467,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074D023846F9000C3DA0B /* en */,
-				0BD075B823846F9100C3DA0B /* es-419 */,
-				0BD0776C238475DB00C3DA0B /* de */,
 			);
 			name = Anivia.json;
 			sourceTree = "<group>";
@@ -1920,8 +1475,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074D223846F9000C3DA0B /* en */,
-				0BD075B923846F9100C3DA0B /* es-419 */,
-				0BD0776D238475DB00C3DA0B /* de */,
 			);
 			name = Sion.json;
 			sourceTree = "<group>";
@@ -1930,8 +1483,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074D423846F9000C3DA0B /* en */,
-				0BD075BA23846F9100C3DA0B /* es-419 */,
-				0BD0776E238475DB00C3DA0B /* de */,
 			);
 			name = MasterYi.json;
 			sourceTree = "<group>";
@@ -1940,8 +1491,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074D623846F9000C3DA0B /* en */,
-				0BD075BB23846F9100C3DA0B /* es-419 */,
-				0BD0776F238475DB00C3DA0B /* de */,
 			);
 			name = Graves.json;
 			sourceTree = "<group>";
@@ -1950,8 +1499,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074D823846F9000C3DA0B /* en */,
-				0BD075BC23846F9100C3DA0B /* es-419 */,
-				0BD07770238475DB00C3DA0B /* de */,
 			);
 			name = Yasuo.json;
 			sourceTree = "<group>";
@@ -1960,8 +1507,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074DA23846F9000C3DA0B /* en */,
-				0BD075BD23846F9100C3DA0B /* es-419 */,
-				0BD07771238475DC00C3DA0B /* de */,
 			);
 			name = Kayn.json;
 			sourceTree = "<group>";
@@ -1970,8 +1515,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074DC23846F9000C3DA0B /* en */,
-				0BD075BE23846F9100C3DA0B /* es-419 */,
-				0BD07772238475DC00C3DA0B /* de */,
 			);
 			name = Akali.json;
 			sourceTree = "<group>";
@@ -1980,8 +1523,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074DE23846F9000C3DA0B /* en */,
-				0BD075BF23846F9100C3DA0B /* es-419 */,
-				0BD07773238475DC00C3DA0B /* de */,
 			);
 			name = Neeko.json;
 			sourceTree = "<group>";
@@ -1990,8 +1531,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074E023846F9000C3DA0B /* en */,
-				0BD075C023846F9100C3DA0B /* es-419 */,
-				0BD07774238475DC00C3DA0B /* de */,
 			);
 			name = Kindred.json;
 			sourceTree = "<group>";
@@ -2000,8 +1539,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074E223846F9000C3DA0B /* en */,
-				0BD075C123846F9100C3DA0B /* es-419 */,
-				0BD07775238475DD00C3DA0B /* de */,
 			);
 			name = Elise.json;
 			sourceTree = "<group>";
@@ -2010,8 +1547,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074E423846F9000C3DA0B /* en */,
-				0BD075C223846F9100C3DA0B /* es-419 */,
-				0BD07776238475DD00C3DA0B /* de */,
 			);
 			name = Sylas.json;
 			sourceTree = "<group>";
@@ -2020,8 +1555,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074E623846F9000C3DA0B /* en */,
-				0BD075C323846F9100C3DA0B /* es-419 */,
-				0BD07777238475DD00C3DA0B /* de */,
 			);
 			name = Karthus.json;
 			sourceTree = "<group>";
@@ -2030,8 +1563,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074E823846F9000C3DA0B /* en */,
-				0BD075C423846F9100C3DA0B /* es-419 */,
-				0BD07778238475DD00C3DA0B /* de */,
 			);
 			name = Sejuani.json;
 			sourceTree = "<group>";
@@ -2040,8 +1571,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074EA23846F9000C3DA0B /* en */,
-				0BD075C523846F9100C3DA0B /* es-419 */,
-				0BD07779238475DD00C3DA0B /* de */,
 			);
 			name = Warwick.json;
 			sourceTree = "<group>";
@@ -2050,8 +1579,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074EC23846F9000C3DA0B /* en */,
-				0BD075C623846F9100C3DA0B /* es-419 */,
-				0BD0777A238475DE00C3DA0B /* de */,
 			);
 			name = Heimerdinger.json;
 			sourceTree = "<group>";
@@ -2060,8 +1587,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074EE23846F9000C3DA0B /* en */,
-				0BD075C723846F9100C3DA0B /* es-419 */,
-				0BD0777B238475DE00C3DA0B /* de */,
 			);
 			name = Sona.json;
 			sourceTree = "<group>";
@@ -2070,8 +1595,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074F023846F9000C3DA0B /* en */,
-				0BD075C823846F9100C3DA0B /* es-419 */,
-				0BD0777C238475DE00C3DA0B /* de */,
 			);
 			name = TwistedFate.json;
 			sourceTree = "<group>";
@@ -2080,8 +1603,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074F223846F9000C3DA0B /* en */,
-				0BD075C923846F9100C3DA0B /* es-419 */,
-				0BD0777D238475DE00C3DA0B /* de */,
 			);
 			name = RekSai.json;
 			sourceTree = "<group>";
@@ -2090,8 +1611,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074F423846F9000C3DA0B /* en */,
-				0BD075CA23846F9100C3DA0B /* es-419 */,
-				0BD0777E238475DF00C3DA0B /* de */,
 			);
 			name = Senna.json;
 			sourceTree = "<group>";
@@ -2100,8 +1619,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074F623846F9000C3DA0B /* en */,
-				0BD075CB23846F9100C3DA0B /* es-419 */,
-				0BD0777F238475DF00C3DA0B /* de */,
 			);
 			name = Shaco.json;
 			sourceTree = "<group>";
@@ -2110,8 +1627,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074F823846F9000C3DA0B /* en */,
-				0BD075CC23846F9100C3DA0B /* es-419 */,
-				0BD07780238475DF00C3DA0B /* de */,
 			);
 			name = Jayce.json;
 			sourceTree = "<group>";
@@ -2120,8 +1635,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074FA23846F9000C3DA0B /* en */,
-				0BD075CD23846F9100C3DA0B /* es-419 */,
-				0BD07781238475DF00C3DA0B /* de */,
 			);
 			name = Ornn.json;
 			sourceTree = "<group>";
@@ -2130,8 +1643,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074FC23846F9000C3DA0B /* en */,
-				0BD075CE23846F9100C3DA0B /* es-419 */,
-				0BD07782238475DF00C3DA0B /* de */,
 			);
 			name = Kennen.json;
 			sourceTree = "<group>";
@@ -2140,8 +1651,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD074FE23846F9000C3DA0B /* en */,
-				0BD075CF23846F9100C3DA0B /* es-419 */,
-				0BD07783238475E000C3DA0B /* de */,
 			);
 			name = Varus.json;
 			sourceTree = "<group>";
@@ -2150,8 +1659,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0750023846F9000C3DA0B /* en */,
-				0BD075D023846F9100C3DA0B /* es-419 */,
-				0BD07784238475E000C3DA0B /* de */,
 			);
 			name = Nautilus.json;
 			sourceTree = "<group>";
@@ -2160,8 +1667,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0750223846F9000C3DA0B /* en */,
-				0BD075D123846F9100C3DA0B /* es-419 */,
-				0BD07785238475E000C3DA0B /* de */,
 			);
 			name = Rumble.json;
 			sourceTree = "<group>";
@@ -2170,8 +1675,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0750423846F9000C3DA0B /* en */,
-				0BD075D223846F9100C3DA0B /* es-419 */,
-				0BD07786238475E000C3DA0B /* de */,
 			);
 			name = Mordekaiser.json;
 			sourceTree = "<group>";
@@ -2180,8 +1683,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0750623846F9000C3DA0B /* en */,
-				0BD075D323846F9100C3DA0B /* es-419 */,
-				0BD07787238475E000C3DA0B /* de */,
 			);
 			name = LeeSin.json;
 			sourceTree = "<group>";
@@ -2190,8 +1691,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0750823846F9000C3DA0B /* en */,
-				0BD075D423846F9100C3DA0B /* es-419 */,
-				0BD07788238475E100C3DA0B /* de */,
 			);
 			name = Veigar.json;
 			sourceTree = "<group>";
@@ -2200,8 +1699,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0750A23846F9000C3DA0B /* en */,
-				0BD075D523846F9100C3DA0B /* es-419 */,
-				0BD07789238475E100C3DA0B /* de */,
 			);
 			name = Tryndamere.json;
 			sourceTree = "<group>";
@@ -2210,8 +1707,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0750C23846F9000C3DA0B /* en */,
-				0BD075D623846F9100C3DA0B /* es-419 */,
-				0BD0778A238475E100C3DA0B /* de */,
 			);
 			name = Ivern.json;
 			sourceTree = "<group>";
@@ -2220,8 +1715,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0750E23846F9000C3DA0B /* en */,
-				0BD075D723846F9100C3DA0B /* es-419 */,
-				0BD0778B238475E100C3DA0B /* de */,
 			);
 			name = Xerath.json;
 			sourceTree = "<group>";
@@ -2230,8 +1723,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0751023846F9000C3DA0B /* en */,
-				0BD075D823846F9100C3DA0B /* es-419 */,
-				0BD0778C238475E100C3DA0B /* de */,
 			);
 			name = Thresh.json;
 			sourceTree = "<group>";
@@ -2240,8 +1731,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0751223846F9000C3DA0B /* en */,
-				0BD075D923846F9100C3DA0B /* es-419 */,
-				0BD0778D238475E200C3DA0B /* de */,
 			);
 			name = Talon.json;
 			sourceTree = "<group>";
@@ -2250,8 +1739,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0751423846F9000C3DA0B /* en */,
-				0BD075DA23846F9100C3DA0B /* es-419 */,
-				0BD0778E238475E200C3DA0B /* de */,
 			);
 			name = Ryze.json;
 			sourceTree = "<group>";
@@ -2260,8 +1747,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0751623846F9000C3DA0B /* en */,
-				0BD075DB23846F9100C3DA0B /* es-419 */,
-				0BD0778F238475E200C3DA0B /* de */,
 			);
 			name = Viktor.json;
 			sourceTree = "<group>";
@@ -2270,8 +1755,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0751823846F9000C3DA0B /* en */,
-				0BD075DC23846F9100C3DA0B /* es-419 */,
-				0BD07790238475E200C3DA0B /* de */,
 			);
 			name = Fiora.json;
 			sourceTree = "<group>";
@@ -2280,8 +1763,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0751A23846F9000C3DA0B /* en */,
-				0BD075DD23846F9100C3DA0B /* es-419 */,
-				0BD07791238475E300C3DA0B /* de */,
 			);
 			name = Azir.json;
 			sourceTree = "<group>";
@@ -2290,8 +1771,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0751C23846F9000C3DA0B /* en */,
-				0BD075DE23846F9100C3DA0B /* es-419 */,
-				0BD07792238475E300C3DA0B /* de */,
 			);
 			name = Zoe.json;
 			sourceTree = "<group>";
@@ -2300,8 +1779,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0751E23846F9000C3DA0B /* en */,
-				0BD075DF23846F9100C3DA0B /* es-419 */,
-				0BD07793238475E300C3DA0B /* de */,
 			);
 			name = Jax.json;
 			sourceTree = "<group>";
@@ -2310,8 +1787,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0752023846F9000C3DA0B /* en */,
-				0BD075E023846F9100C3DA0B /* es-419 */,
-				0BD07794238475E300C3DA0B /* de */,
 			);
 			name = Rengar.json;
 			sourceTree = "<group>";
@@ -2320,8 +1795,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0752223846F9000C3DA0B /* en */,
-				0BD075E123846F9100C3DA0B /* es-419 */,
-				0BD07795238475E400C3DA0B /* de */,
 			);
 			name = Taliyah.json;
 			sourceTree = "<group>";
@@ -2330,8 +1803,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0752423846F9000C3DA0B /* en */,
-				0BD075E223846F9100C3DA0B /* es-419 */,
-				0BD07796238475E400C3DA0B /* de */,
 			);
 			name = Vayne.json;
 			sourceTree = "<group>";
@@ -2340,8 +1811,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0752623846F9000C3DA0B /* en */,
-				0BD075E323846F9100C3DA0B /* es-419 */,
-				0BD07797238475E400C3DA0B /* de */,
 			);
 			name = Yorick.json;
 			sourceTree = "<group>";
@@ -2350,8 +1819,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0752823846F9000C3DA0B /* en */,
-				0BD075E423846F9100C3DA0B /* es-419 */,
-				0BD07798238475E400C3DA0B /* de */,
 			);
 			name = Bard.json;
 			sourceTree = "<group>";
@@ -2360,8 +1827,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0752A23846F9000C3DA0B /* en */,
-				0BD075E523846F9100C3DA0B /* es-419 */,
-				0BD07799238475E500C3DA0B /* de */,
 			);
 			name = Braum.json;
 			sourceTree = "<group>";
@@ -2370,8 +1835,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0752C23846F9000C3DA0B /* en */,
-				0BD075E623846F9100C3DA0B /* es-419 */,
-				0BD0779A238475E500C3DA0B /* de */,
 			);
 			name = Nunu.json;
 			sourceTree = "<group>";
@@ -2380,8 +1843,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0752E23846F9000C3DA0B /* en */,
-				0BD075E723846F9100C3DA0B /* es-419 */,
-				0BD0779B238475E500C3DA0B /* de */,
 			);
 			name = Gangplank.json;
 			sourceTree = "<group>";
@@ -2390,8 +1851,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0753023846F9000C3DA0B /* en */,
-				0BD075E823846F9100C3DA0B /* es-419 */,
-				0BD0779C238475E500C3DA0B /* de */,
 			);
 			name = Tristana.json;
 			sourceTree = "<group>";
@@ -2400,8 +1859,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0753223846F9000C3DA0B /* en */,
-				0BD075E923846F9100C3DA0B /* es-419 */,
-				0BD0779D238475E600C3DA0B /* de */,
 			);
 			name = Corki.json;
 			sourceTree = "<group>";
@@ -2410,8 +1867,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0753423846F9000C3DA0B /* en */,
-				0BD075EA23846F9100C3DA0B /* es-419 */,
-				0BD0779E238475E600C3DA0B /* de */,
 			);
 			name = Malzahar.json;
 			sourceTree = "<group>";
@@ -2420,8 +1875,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0753623846F9000C3DA0B /* en */,
-				0BD075EB23846F9100C3DA0B /* es-419 */,
-				0BD0779F238475E600C3DA0B /* de */,
 			);
 			name = Gragas.json;
 			sourceTree = "<group>";
@@ -2430,8 +1883,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0753823846F9000C3DA0B /* en */,
-				0BD075EC23846F9100C3DA0B /* es-419 */,
-				0BD077A0238475E600C3DA0B /* de */,
 			);
 			name = Teemo.json;
 			sourceTree = "<group>";
@@ -2440,8 +1891,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0753A23846F9000C3DA0B /* en */,
-				0BD075ED23846F9100C3DA0B /* es-419 */,
-				0BD077A1238475E700C3DA0B /* de */,
 			);
 			name = Lissandra.json;
 			sourceTree = "<group>";
@@ -2450,8 +1899,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0753C23846F9000C3DA0B /* en */,
-				0BD075EE23846F9100C3DA0B /* es-419 */,
-				0BD077A2238475E700C3DA0B /* de */,
 			);
 			name = Fizz.json;
 			sourceTree = "<group>";
@@ -2460,8 +1907,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0753E23846F9000C3DA0B /* en */,
-				0BD075EF23846F9100C3DA0B /* es-419 */,
-				0BD077A3238475E700C3DA0B /* de */,
 			);
 			name = Morgana.json;
 			sourceTree = "<group>";
@@ -2470,8 +1915,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0754023846F9000C3DA0B /* en */,
-				0BD075F023846F9100C3DA0B /* es-419 */,
-				0BD077A4238475E700C3DA0B /* de */,
 			);
 			name = Evelynn.json;
 			sourceTree = "<group>";
@@ -2480,8 +1923,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0754223846F9000C3DA0B /* en */,
-				0BD075F123846F9100C3DA0B /* es-419 */,
-				0BD077A5238475E700C3DA0B /* de */,
 			);
 			name = Gnar.json;
 			sourceTree = "<group>";
@@ -2490,8 +1931,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0754423846F9000C3DA0B /* en */,
-				0BD075F223846F9100C3DA0B /* es-419 */,
-				0BD077A6238475E800C3DA0B /* de */,
 			);
 			name = Ziggs.json;
 			sourceTree = "<group>";
@@ -2500,8 +1939,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0754623846F9000C3DA0B /* en */,
-				0BD075F323846F9100C3DA0B /* es-419 */,
-				0BD077A7238475E800C3DA0B /* de */,
 			);
 			name = Vi.json;
 			sourceTree = "<group>";
@@ -2510,8 +1947,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0754823846F9000C3DA0B /* en */,
-				0BD075F423846F9100C3DA0B /* es-419 */,
-				0BD077A8238475E800C3DA0B /* de */,
 			);
 			name = Irelia.json;
 			sourceTree = "<group>";
@@ -2520,8 +1955,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0754A23846F9000C3DA0B /* en */,
-				0BD075F523846F9100C3DA0B /* es-419 */,
-				0BD077A9238475E800C3DA0B /* de */,
 			);
 			name = Ashe.json;
 			sourceTree = "<group>";
@@ -2530,8 +1963,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0754C23846F9000C3DA0B /* en */,
-				0BD075F623846F9100C3DA0B /* es-419 */,
-				0BD077AA238475E800C3DA0B /* de */,
 			);
 			name = Nidalee.json;
 			sourceTree = "<group>";
@@ -2540,8 +1971,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0754E23846F9000C3DA0B /* en */,
-				0BD075F723846F9100C3DA0B /* es-419 */,
-				0BD077AB238475E900C3DA0B /* de */,
 			);
 			name = DrMundo.json;
 			sourceTree = "<group>";
@@ -2550,8 +1979,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0755023846F9000C3DA0B /* en */,
-				0BD075F823846F9100C3DA0B /* es-419 */,
-				0BD077AC238475E900C3DA0B /* de */,
 			);
 			name = Zilean.json;
 			sourceTree = "<group>";
@@ -2560,8 +1987,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0755223846F9000C3DA0B /* en */,
-				0BD075F923846F9100C3DA0B /* es-419 */,
-				0BD077AD238475E900C3DA0B /* de */,
 			);
 			name = Qiyana.json;
 			sourceTree = "<group>";
@@ -2570,8 +1995,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0755423846F9000C3DA0B /* en */,
-				0BD075FA23846F9100C3DA0B /* es-419 */,
-				0BD077AE238475E900C3DA0B /* de */,
 			);
 			name = Lulu.json;
 			sourceTree = "<group>";
@@ -2580,8 +2003,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0755623846F9000C3DA0B /* en */,
-				0BD075FB23846F9100C3DA0B /* es-419 */,
-				0BD077AF238475E900C3DA0B /* de */,
 			);
 			name = Katarina.json;
 			sourceTree = "<group>";
@@ -2590,8 +2011,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0755823846F9000C3DA0B /* en */,
-				0BD075FC23846F9100C3DA0B /* es-419 */,
-				0BD077B0238475EA00C3DA0B /* de */,
 			);
 			name = Illaoi.json;
 			sourceTree = "<group>";
@@ -2600,8 +2019,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0755A23846F9000C3DA0B /* en */,
-				0BD075FD23846F9100C3DA0B /* es-419 */,
-				0BD077B1238475EA00C3DA0B /* de */,
 			);
 			name = Aatrox.json;
 			sourceTree = "<group>";
@@ -2610,8 +2027,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0755C23846F9000C3DA0B /* en */,
-				0BD075FE23846F9100C3DA0B /* es-419 */,
-				0BD077B2238475EA00C3DA0B /* de */,
 			);
 			name = Zyra.json;
 			sourceTree = "<group>";
@@ -2620,8 +2035,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0755E23846F9000C3DA0B /* en */,
-				0BD075FF23846F9100C3DA0B /* es-419 */,
-				0BD077B3238475EA00C3DA0B /* de */,
 			);
 			name = Kled.json;
 			sourceTree = "<group>";
@@ -2630,8 +2043,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0756023846F9000C3DA0B /* en */,
-				0BD0760023846F9100C3DA0B /* es-419 */,
-				0BD077B4238475EB00C3DA0B /* de */,
 			);
 			name = Renekton.json;
 			sourceTree = "<group>";
@@ -2640,8 +2051,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0756223846F9000C3DA0B /* en */,
-				0BD0760123846F9100C3DA0B /* es-419 */,
-				0BD077B5238475EB00C3DA0B /* de */,
 			);
 			name = Pantheon.json;
 			sourceTree = "<group>";
@@ -2650,8 +2059,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0756423846F9000C3DA0B /* en */,
-				0BD0760223846F9100C3DA0B /* es-419 */,
-				0BD077B6238475EB00C3DA0B /* de */,
 			);
 			name = Fiddlesticks.json;
 			sourceTree = "<group>";
@@ -2660,8 +2067,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0756623846F9000C3DA0B /* en */,
-				0BD0760323846F9100C3DA0B /* es-419 */,
-				0BD077B7238475EB00C3DA0B /* de */,
 			);
 			name = Olaf.json;
 			sourceTree = "<group>";
@@ -2670,8 +2075,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0756823846F9000C3DA0B /* en */,
-				0BD0760423846F9100C3DA0B /* es-419 */,
-				0BD077BF2384765E00C3DA0B /* de */,
 			);
 			name = Rakan.json;
 			sourceTree = "<group>";
@@ -2680,8 +2083,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0756A23846F9100C3DA0B /* en */,
-				0BD0760523846F9100C3DA0B /* es-419 */,
-				0BD077BD2384765E00C3DA0B /* de */,
 			);
 			name = Quinn.json;
 			sourceTree = "<group>";
@@ -2690,8 +2091,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0756C23846F9100C3DA0B /* en */,
-				0BD0760623846F9100C3DA0B /* es-419 */,
-				0BD077C22384765E00C3DA0B /* de */,
 			);
 			name = Orianna.json;
 			sourceTree = "<group>";
@@ -2700,8 +2099,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0756E23846F9100C3DA0B /* en */,
-				0BD0760723846F9100C3DA0B /* es-419 */,
-				0BD077BA2384765E00C3DA0B /* de */,
 			);
 			name = Maokai.json;
 			sourceTree = "<group>";
@@ -2710,8 +2107,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0757023846F9100C3DA0B /* en */,
-				0BD0760823846F9100C3DA0B /* es-419 */,
-				0BD077C02384765E00C3DA0B /* de */,
 			);
 			name = Xayah.json;
 			sourceTree = "<group>";
@@ -2720,8 +2115,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0757223846F9100C3DA0B /* en */,
-				0BD0760923846F9100C3DA0B /* es-419 */,
-				0BD077C62384765E00C3DA0B /* de */,
 			);
 			name = Rammus.json;
 			sourceTree = "<group>";
@@ -2730,8 +2123,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0757423846F9100C3DA0B /* en */,
-				0BD0760A23846F9100C3DA0B /* es-419 */,
-				0BD077C12384765E00C3DA0B /* de */,
 			);
 			name = Galio.json;
 			sourceTree = "<group>";
@@ -2740,8 +2131,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0757623846F9100C3DA0B /* en */,
-				0BD0760B23846F9100C3DA0B /* es-419 */,
-				0BD077BB2384765E00C3DA0B /* de */,
 			);
 			name = MissFortune.json;
 			sourceTree = "<group>";
@@ -2750,8 +2139,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0757823846F9100C3DA0B /* en */,
-				0BD0760C23846F9100C3DA0B /* es-419 */,
-				0BD077C52384765E00C3DA0B /* de */,
 			);
 			name = Kaisa.json;
 			sourceTree = "<group>";
@@ -2760,8 +2147,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0757A23846F9100C3DA0B /* en */,
-				0BD0760D23846F9100C3DA0B /* es-419 */,
-				0BD077BE2384765E00C3DA0B /* de */,
 			);
 			name = Taric.json;
 			sourceTree = "<group>";
@@ -2770,8 +2155,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BD0757C23846F9100C3DA0B /* en */,
-				0BD0760E23846F9100C3DA0B /* es-419 */,
-				0BD077BC2384765E00C3DA0B /* de */,
 			);
 			name = Cassiopeia.json;
 			sourceTree = "<group>";
@@ -2780,8 +2163,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BE07C502381140F00B39433 /* en */,
-				0BE07C522381143000B39433 /* es-419 */,
-				0BD077B8238475EB00C3DA0B /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -2790,7 +2171,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0BF0EECB237DEA4F002861BC /* Base */,
-				0BE07C532381143000B39433 /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

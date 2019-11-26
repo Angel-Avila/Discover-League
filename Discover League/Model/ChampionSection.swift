@@ -15,9 +15,19 @@ struct ChampionSection: Decodable, Hashable {
     let showsButton: Bool
     let subtitle: String
     let dataIdentifiers: [DataIdentifier]
+    
+    let identifier = UUID()
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
+    }
 }
 
 struct DataIdentifier: Decodable, Hashable {
     let championId: String
     let skinId: String
+    
+    let identifier = UUID()
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
+    }
 }
